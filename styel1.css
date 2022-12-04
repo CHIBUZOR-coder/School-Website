@@ -241,7 +241,7 @@
 
  }
 
- @media screen and (max-width:420px) {
+ @media screen and (max-width:500px) {
    .bfh {
      background: rgb(17, 17, 22);
    }
