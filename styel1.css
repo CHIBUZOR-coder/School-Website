@@ -241,7 +241,7 @@
 
  }
 
- edia screen and (max-width:420px) {
+ @media screen and (max-width:420px) {
    .bfh {
      background: rgb(17, 17, 22);
    }
