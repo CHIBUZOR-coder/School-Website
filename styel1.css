@@ -298,13 +298,13 @@
 
    .bgh {
      position: relative;
-     background: darkblue;
+     background: rgb(44, 17, 70);
      height: 80vh;
 
    }
 
    .dgh {
-     background: darkblue;
+     background: rgb(44, 17, 70);
    }
 
    .arc {
