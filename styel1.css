@@ -47,7 +47,7 @@
    position: relative;
    text-align: center;
    top: 8vh;
-   /* right: 10%; */
+   right: 10%;
 
 
  }
@@ -141,11 +141,18 @@
 
  .bgh {
    background-color: rgb(44, 17, 70);
-   min-height: 60vh;
+   min-height: 70vh;
    width: 100vw;
    position: relative;
  }
 
+ .dgh {
+   background-color: rgb(44, 17, 70);
+   min-height: 70vh;
+   width: 100vw;
+   /* position: relative; */
+   color: aqua;
+ }
 
 
  .bfh {
@@ -241,7 +248,45 @@
 
  }
 
- @media screen and (max-width:510px) {
+ .sip {
+   position: relative;
+   text-align: right;
+   width: 50%;
+
+ }
+
+ .bip {
+   text-align: center;
+
+ }
+
+ .lol {
+   position: relative;
+   margin-top: 5%;
+
+ }
+
+ .prd {
+   text-align: center;
+ }
+
+ @media screen and (min-width:600px) {
+   .bfh {
+     background: rgb(17, 17, 22);
+   }
+
+   body {
+     position: relative;
+   }
+
+   /* .conn {
+     width: 80%;
+   } */
+
+
+ }
+
+ @media screen and (max-width:500px) {
    .bfh {
      background: rgb(17, 17, 22);
    }
@@ -263,9 +308,27 @@
      height: 40%;
    }
 
-   /* .block {
-     margin-left: 20%;
-   } */
+   .bull {
+     position: relative;
+     text-align: center;
+   }
+
+   .block {
+     position: relative;
+     width: 30vw;
+     /* margin-right: 16%; */
+     left: 7vh;
+   }
+
+   .conn {
+     width: 80%;
+
+   }
+
+   .prd {
+     text-align: center;
+
+   }
 
  }
 
