@@ -271,9 +271,7 @@
  }
 
  @media screen and (min-width:600px) {
-   .bfh {
-     background: rgb(17, 17, 22);
-   }
+  
 
    body {
      position: relative;
@@ -287,10 +285,7 @@
  }
 
  @media screen and (max-width:500px) {
-   .bfh {
-     background: rgb(17, 17, 22);
-   }
-
+   
    body {
      position: relative;
      overflow-x: hidden;
