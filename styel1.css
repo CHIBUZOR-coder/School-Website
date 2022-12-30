@@ -271,21 +271,16 @@
  }
 
  @media screen and (min-width:600px) {
-  
+
 
    body {
      position: relative;
    }
 
-   /* .conn {
-     width: 80%;
-   } */
-
-
  }
 
  @media screen and (max-width:500px) {
-   
+
    body {
      position: relative;
      overflow-x: hidden;
