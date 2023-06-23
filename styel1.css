@@ -29,7 +29,7 @@
 
 
  .block {
-   position: relative;
+   position: absolute;
    margin-left:36%;
   
    height: 70%;
@@ -199,6 +199,8 @@
 
  }
 
+ 
+
 
 
 
@@ -326,14 +328,14 @@
    }
 
 
-
-
    .bull {
      position: relative;
      text-align: center;
    }
 
- 
+ .greeksPhoto {
+   height: 40%;
+ }
 
    .prd {
      text-align: center;
