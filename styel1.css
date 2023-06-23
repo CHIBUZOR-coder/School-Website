@@ -148,14 +148,14 @@
    /* position: relative; */
    color: aqua;
  }
-
+ 
 
  .bfh {
    background-color: rgb(44, 17, 70);
  }
 
 
-
+ 
 
  .book {
    width: 100vw;
@@ -176,6 +176,7 @@
  }
 
  .con {
+  
    margin-top: 4%;
 
    text-align: center;
@@ -184,14 +185,20 @@
  }
 
  .conn {
-   text-align: center;
-  width: 50vw;
-  height:40vh;
- 
 
+  border-radius: 8px;
+   text-align: center;
+margin-top: 4%;
+  /* height: 60vh; */
+background-color: rgb(44, 17, 70);
 
  }
- .conbody{background-color: rgb(44, 17, 70);}
+
+ .conn-under{
+
+  height: 30vh;
+ }
+
 
  .contact-button {
 
@@ -200,6 +207,13 @@
 
  }
 
+ .footer{
+
+padding-top: 3%;
+
+
+
+ }
  
 
 
@@ -288,41 +302,64 @@
  @media screen and (min-width:600px) {
 
 .greeksPhoto {
-    height: 40%;
+    min-height: 40%;
   }
+
+
 .conn {
   position: relative;
-  width: 30%;
+   width: 40%; 
+
+} 
 
 
-}
+
  }
 
 
-
- @media screen and (min-width:300px) {
+/* 
+ @media screen and (max-width:500px) {
 
    body {
      position: relative;
      overflow-x: hidden;
-   }
 
-.conn {
-  position: relative;
-  width: 74%;
+   }
+.conn-under{
+  height: 30vh;
 }
-  
-   .back-home {
-     position: relative;
-   }
 
-    }
+    } */
   
 
+@media screen and (min-width:280px) {
+
+  body {
+    position: relative;
+    overflow-x: hidden;
+
+  }
+
+  .conn-under {
+    height: 40vh;
+  }
+
+}
 
 
+@media screen and (min-width:700px) {
 
+  body {
+    position: relative;
+    overflow-x: hidden;
 
+  }
+
+  .conn-under {
+    height: 60vh;
+  }
+
+}
 
 
 
