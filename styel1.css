@@ -280,12 +280,10 @@
    text-align: center;
  }
 
-
- /* 
- @media screen and (min-width:700px) {
-
+/* 
+  
+ @media screen and (m-width:400px) {
  } */
-
 
  @media screen and (min-width:600px) {
 
@@ -309,9 +307,11 @@
      overflow-x: hidden;
    }
 
-
-   
-
+.conn {
+  position: relative;
+  width: 74%;
+}
+  
    .back-home {
      position: relative;
    }
