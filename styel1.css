@@ -185,7 +185,8 @@
 
  .conn {
    text-align: center;
-  width: 100vw;
+  width: 50vw;
+  height:40vh;
  
 
 
@@ -315,6 +316,56 @@
      position: relative;
    }
 
+    }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+.imjb{
+margin-left: -5;
+
+}
+
 
    .general-background {
      position: relative;
@@ -333,9 +384,11 @@
      text-align: center;
    }
 
+
  .greeksPhoto {
    height: 30%;
  }
+
 
    .prd {
      text-align: center;
@@ -349,7 +402,7 @@
    }
 
 
- }
+ 
 
 
 
