@@ -185,8 +185,12 @@
 
  .conn {
    text-align: center;
-   width: 30%;
+  width: 100vw;
+ 
+
+
  }
+ .conbody{background-color: rgb(44, 17, 70);}
 
  .contact-button {
 
@@ -280,12 +284,17 @@
  } */
 
 
- @media screen and (max-width:600px) {
+ @media screen and (min-width:600px) {
 
 .greeksPhoto {
     height: 40%;
   }
+.conn {
+  position: relative;
+  width: 30%;
 
+
+}
  }
 
 
@@ -298,10 +307,7 @@
    }
 
 
-   .conn {
-     min-height: 100vh;
-   }
-
+   
 
    .back-home {
      position: relative;
@@ -311,7 +317,7 @@
    .general-background {
      position: relative;
      background: rgb(44, 17, 70);
-     min-height: 90vh;
+     min-height: 120vh;
    }
 
 
@@ -327,11 +333,7 @@
      text-align: center;
    }
 
-
-   .conn {
-     width: 80%;
-   }
-
+ 
 
    .prd {
      text-align: center;
