@@ -19,27 +19,28 @@
  }
 
 
- .arc {
-   position: relative;
-   width: 100%;
-   height: 100%;
+ .greeksPhoto {
+   
+ 
+   height:fit-content;
+  
 
  }
 
 
  .block {
    position: relative;
-   position: relative;
-   width: 30%;
-   height: 60%;
-   left: 46%;
-
+   margin-left:36%;
+  
+   height: 70%;
  }
+
 
  .ball {
    position: relative;
    text-align: center;
    top: 8vh;
+   
 
  }
 
@@ -76,13 +77,6 @@
    margin-top: 10%;
  }
 
- .con {
-   margin-top: 4%;
-
-   text-align: center;
-   color: white;
-
- }
 
  .ptt {
    color: white;
@@ -139,11 +133,12 @@
    position: relative;
  }
 
- .bgh {
+ .general-background {
    background-color: rgb(44, 17, 70);
-   min-height: 70vh;
+   min-height: 90vh;
    width: 100vw;
    position: relative;
+   overflow-y: hidden;
  }
 
  .dgh {
@@ -157,12 +152,6 @@
 
  .bfh {
    background-color: rgb(44, 17, 70);
- }
-
- .bgh {
-   background-color: rgb(44, 17, 70);
-   height: 30vh;
-   width: 100%;
  }
 
 
@@ -186,7 +175,25 @@
 
  }
 
+ .con {
+   margin-top: 4%;
 
+   text-align: center;
+   color: white;
+
+ }
+
+ .conn {
+   text-align: center;
+   width: 30%;
+ }
+
+ .contact-button {
+
+   float: right;
+   margin-top: 5px;
+
+ }
 
 
 
@@ -210,31 +217,27 @@
 
  }
 
- .conn {
-   width: 30%;
- }
-
  .imj {
-   width: 18%;
-   margin-left: -3%;
+   width: 15%;
+   margin-left: -5%;
  }
 
  .imja {
    width: 20%;
-   margin-left: -2%;
+   margin-left: 36%;
  }
 
 
  .imjb {
    width: 13%;
-   margin-left: -2%;
+   margin-left: -6%;
 
  }
 
 
  .imjp {
-   width: 22%;
-   margin-left: -6%;
+   width: 19%;
+   margin-left: -8%;
 
  }
 
@@ -270,59 +273,77 @@
    text-align: center;
  }
 
- @media screen and (min-width:600px) {
+
+ /* 
+ @media screen and (min-width:700px) {
+
+ } */
 
 
-   body {
-     position: relative;
-   }
+ @media screen and (max-width:600px) {
+
+.greeksPhoto {
+    height: 40%;
+  }
 
  }
 
- @media screen and (max-width:500px) {
+
+
+ @media screen and (min-width:300px) {
 
    body {
      position: relative;
      overflow-x: hidden;
    }
 
-   .bgh {
+
+   .conn {
+     min-height: 100vh;
+   }
+
+
+   .back-home {
+     position: relative;
+   }
+
+
+   .general-background {
      position: relative;
      background: rgb(44, 17, 70);
-     height: 80vh;
-
+     min-height: 90vh;
    }
+
 
    .dgh {
      background: rgb(44, 17, 70);
    }
 
-   .arc {
-     width: 100%;
-     height: 40%;
-   }
+
+
 
    .bull {
      position: relative;
      text-align: center;
    }
 
-   .block {
-     position: relative;
-     width: 30vw;
-     /* margin-right: 16%; */
-     left: 7vh;
-   }
 
    .conn {
      width: 80%;
-
    }
+
 
    .prd {
      text-align: center;
-
    }
+
+
+   .fir {
+     background-color: rgb(108, 108, 231);
+     width: 20vh;
+     min-height: 5vh;
+   }
+
 
  }
 
@@ -330,6 +351,216 @@
 
 
 
+
+/* chat Styling */
+
+ .chatting {
+   width: 500 !important;
+   margin: auto;
+   margin-top: 4%;
+   font-family: sans-serif;
+   letter-spacing: 0.5px;
+ }
+
+ .mge {
+   width: 7%;
+   border-radius: 70%;
+   float: left;
+   margin: 10px 0 0 20px;
+ }
+
+
+ .msg-header {
+   border: 1px solid #ccc;
+   width: 100%;
+   margin-bottom: -10px;
+   border-bottom: none;
+   display: inline-block;
+   background-color: #007bff;
+
+ }
+
+ msg-header-img {
+   border-radius: 50%;
+   width: 10%;
+   margin-left: 5%;
+   margin-top: 12px;
+   float: left;
+
+ }
+
+
+ .activee {
+   width: 120px;
+   float: left;
+   margin-top: 10px;
+ }
+
+ .activee h4 {
+   font-size: px;
+   margin-left: 10px;
+   color: #fff;
+ }
+
+ .activee h6 {
+   font-size: 10px;
+   margin-left: 10px;
+   color: #fff;
+   line-height: 2px;
+ }
+
+ .msg-inbox {
+   border: 1px solid #ccc;
+   overflow: hidden;
+   padding-bottom: 40px;
+
+ }
+
+ .chats {
+   padding: 30px 15px 0 25px;
+ }
+
+
+ .msg-page {
+   height: 70vh;
+   overflow-y: auto;
+   width: 100%;
+   margin-left: -5px;
+ }
+
+ .received-chat-img {
+   min-height: 50px;
+   width: 50px;
+   background-color: burlywood;
+   position: relative;
+   float: left;
+ }
+
+
+
+ .mge2 {
+   width: 20px;
+   position: absolute;
+   margin: 0 -155px;
+   border-radius: 100%;
+ }
+
+
+ .received-msg {
+   padding: 0 0 0 50px;
+   vertical-align: top;
+   width: 70%;
+ }
+
+
+ .received-msg-inbox p {
+   clear: left;
+   background: #efefef none repeat scroll 0 0;
+   font-size: 14px;
+   color: #646464;
+   border-radius: 10px;
+   margin: 0;
+   padding: 5px 10px 15px 12px;
+ }
+
+ .time {
+   color: #777;
+   display: block;
+   font-size: 12px;
+   margin: 8px 0 0;
+ }
+
+ .received-chats {
+   margin: 180px 0 0 0;
+ }
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* out going  */
+
+
+ .outgoing-chat-msg {
+   float: right;
+   margin: 18px 0 0 0;
+
+   width: 70%;
+
+   padding: 0 0 2px;
+ }
+
+ .outgoing-chat-msg p {
+   background: #efefef none repeat scroll 0 0;
+   color: #646464;
+   border-radius: 10px;
+   margin: 0;
+   padding: 5px 10px 15px 12px;
+   font-size: 14px;
+ }
+
+ .img3 {
+   width: 20px;
+   margin: 0 20px;
+
+   float: right;
+   border-radius: 20%;
+   margin-bottom: 40px;
+
+ }
+
+
+ .outgoing-msg-inbox {
+   margin-right: 50px;
+
+
+ }
+
+
+ .input-container {
+   position: relative;
+ }
+
+ .input-container i {
+   position: absolute;
+   top: 50%;
+   right: 10px;
+   transform: translateY(-50%);
+   color: #999;
+   font-size: 20px;
+   pointer-events: none;
+ }
+
+
+ .modalClass {
+
+   background-color: blue;
+   float: right;
+   margin-right: 5px;
+
+ }
 
  /*
 css rule: The css rule includes
