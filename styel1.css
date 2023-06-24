@@ -20,18 +20,18 @@
 
 
  .greeksPhoto {
-   
- 
-   height:fit-content;
-  
+
+
+   height: fit-content;
+
 
  }
 
 
  .block {
    position: absolute;
-   margin-left:36%;
-  
+   margin-left: 36%;
+
    height: 70%;
  }
 
@@ -40,7 +40,7 @@
    position: relative;
    text-align: center;
    top: 8vh;
-   
+
 
  }
 
@@ -88,7 +88,7 @@
 
 
  .lunch {
-   margin-top: 20%;
+   margin-top: 3%;
 
  }
 
@@ -103,7 +103,7 @@
  }
 
  h3 {
-   color: aqua;
+   rgb(29, 34, 34);
 
    /* text-align: center; */
  }
@@ -111,7 +111,7 @@
 
 
  h2 {
-   color: aqua;
+   color: rgb(29, 34, 34);
    /* text-align: center; */
  }
 
@@ -141,6 +141,15 @@
    overflow-y: hidden;
  }
 
+ .home-page {
+
+   background-color: rgb(15, 2, 27);
+   min-height: 100vh;
+   width: 100%;
+ }
+
+
+
  .dgh {
    background-color: rgb(44, 17, 70);
    min-height: 70vh;
@@ -148,14 +157,41 @@
    /* position: relative; */
    color: aqua;
  }
- 
+
 
  .bfh {
    background-color: rgb(44, 17, 70);
  }
 
+ .home {
+   width: 100%;
+   height: 80vh;
+   background-image: url(/Work-project-1/imajes/page-image2.webp);
 
- 
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+
+ }
+
+.vvv{
+  position:sticky 
+  ;
+  z-index: 999;
+}
+
+ .nbaar-home {
+
+   height: 80vh;
+   width: 100%;
+
+   background-image: url(/Work-project-1/imajes/education.jpg);
+
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+
+ }
 
  .book {
    width: 100vw;
@@ -176,7 +212,7 @@
  }
 
  .con {
-  
+
    margin-top: 4%;
 
    text-align: center;
@@ -186,17 +222,17 @@
 
  .conn {
 
-  border-radius: 8px;
+   border-radius: 8px;
    text-align: center;
-margin-top: 4%;
-  /* height: 60vh; */
-background-color: rgb(44, 17, 70);
+   margin-top: 4%;
+   /* height: 60vh; */
+   background-color: rgb(44, 17, 70);
 
  }
 
- .conn-under{
+ .conn-under {
 
-  height: 30vh;
+   height: 30vh;
  }
 
 
@@ -207,14 +243,14 @@ background-color: rgb(44, 17, 70);
 
  }
 
- .footer{
+ .footer {
 
-padding-top: 3%;
+   padding-top: 3%;
 
 
 
  }
- 
+
 
 
 
@@ -229,12 +265,14 @@ padding-top: 3%;
 
  } */
 
- .hody {
-   background-image: url("./imajes/bbimh.jpg");
-   background-size: cover;
-   background-repeat: no-repeat;
-   background-attachment: fixed;
-   background-position: center;
+
+
+ .recoverPage {
+   background-color: rgb(44, 17, 70);
+   border-radius: 8px;
+   margin-top: 5%;
+   width: 30%;
+   min-height: 70vh;
 
  }
 
@@ -294,45 +332,94 @@ padding-top: 3%;
    text-align: center;
  }
 
-/* 
+
+
+ .ulist {
+
+   margin-left: 80px;
+
+ }
+
+ /* 
   
  @media screen and (m-width:400px) {
  } */
 
  @media screen and (min-width:600px) {
 
-.greeksPhoto {
-    min-height: 40%;
-  }
+   .greeksPhoto {
+     min-height: 40%;
+   }
 
 
-.conn {
-  position: relative;
-   width: 40%; 
+   .conn {
+     position: relative;
+     width: 40%;
+     
 
-} 
+   }
 
 
 
  }
 
 
-/* 
+ 
  @media screen and (max-width:500px) {
+
+   .received-chats{
+position: absolute;
+width: 100%;
+   }
+.outgoing-chat-msg{
+
+  position: absolute;
+}
+}
+
+
+
+
+ @media screen and (min-width:280px) {
+
+   body {
+     position: relative;
+     /* overflow-x: hidden; */
+
+   }
+.conn{
+  width: 60%;
+}
+   .conn-under {
+     height: 40vh;
+   }
+   .chatting{
+    min-height: 90vh;
+   }
+   
+.chat-page{
+  height: 100%;
+}
+
+ }
+
+
+ @media screen and (min-width:700px) {
 
    body {
      position: relative;
      overflow-x: hidden;
 
    }
-.conn-under{
-  height: 30vh;
-}
 
-    } */
-  
+   .conn-under {
+     height: 60vh;
+   }
 
-@media screen and (min-width:280px) {
+ }
+
+
+@media screen and (min-width:900px) {
 
   body {
     position: relative;
@@ -340,23 +427,8 @@ padding-top: 3%;
 
   }
 
-  .conn-under {
-    height: 40vh;
-  }
-
-}
-
-
-@media screen and (min-width:700px) {
-
-  body {
-    position: relative;
-    overflow-x: hidden;
-
-  }
-
-  .conn-under {
-    height: 60vh;
+  .conn {
+    width:30% ;
   }
 
 }
@@ -387,7 +459,6 @@ padding-top: 3%;
 
 
 
-    
 
 
 
@@ -396,30 +467,28 @@ padding-top: 3%;
 
 
 
+ .imjb {
+   margin-left: -5;
+
+ }
 
 
-.imjb{
-margin-left: -5;
-
-}
-
-
-   .general-background {
-     position: relative;
-     background: rgb(44, 17, 70);
-     min-height: 120vh;
-   }
+ .general-background {
+   position: relative;
+   background: rgb(44, 17, 70);
+   min-height: 120vh;
+ }
 
 
-   .dgh {
-     background: rgb(44, 17, 70);
-   }
+ .dgh {
+   background: rgb(44, 17, 70);
+ }
 
 
-   .bull {
-     position: relative;
-     text-align: center;
-   }
+ .bull {
+   position: relative;
+   text-align: center;
+ }
 
 
  .greeksPhoto {
@@ -427,26 +496,26 @@ margin-left: -5;
  }
 
 
-   .prd {
-     text-align: center;
-   }
+ .prd {
+   text-align: center;
+ }
 
 
-   .fir {
-     background-color: rgb(108, 108, 231);
-     width: 20vh;
-     min-height: 5vh;
-   }
-
-
- 
+ .fir {
+   background-color: rgb(108, 108, 231);
+   width: 20vh;
+   min-height: 5vh;
+ }
 
 
 
 
 
 
-/* chat Styling */
+
+
+
+ /* chat Styling */
 
  .chatting {
    width: 500 !important;
@@ -569,7 +638,7 @@ margin-left: -5;
  }
 
 
- 
+
 
 
 
