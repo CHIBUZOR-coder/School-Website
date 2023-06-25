@@ -207,14 +207,22 @@
 
  }
 
- .con {
+ /*.con {
 
    margin-top: 4%;
 
    text-align: center;
    color: white;
 
- }
+ }*/
+.con {
+
+   
+
+ background-color:pink;
+ 
+
+}
 
  .conn {
 
@@ -228,7 +236,7 @@
 
  .conn-under {
 
-   height: 30vh;
+   height: 20vh;
  }
 
 
