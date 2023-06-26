@@ -39,7 +39,7 @@
  .ball {
    position: relative;
    text-align: center;
-   top: 2vh;
+   top: 8vh;
 
 
  }
@@ -47,8 +47,8 @@
  .bull {
    position: relative;
    text-align: center;
-   top: 2vh;
-
+   top: 8vh;
+   right: 10%;
 
 
  }
@@ -336,7 +336,10 @@
 
 
  }
- 
+ .nav-item{
+
+  color: darkblue;
+ }
 
 
  /* 
