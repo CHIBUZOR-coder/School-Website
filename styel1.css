@@ -696,7 +696,15 @@ color: #999;
 
  }
 
+.nav-button{
+cursor: pointer;
+border: 2px solid #3f1f69 ;
+}
 
+.nav-button:hover{
+background-color:#646464 ;
+
+}
 .cop{
   color: #3f1f69;
 }
