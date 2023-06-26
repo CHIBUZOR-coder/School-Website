@@ -102,18 +102,12 @@
    margin-top: 0%;
  }
 
- h3 {
-   rgb(29, 34, 34);
-
-   /* text-align: center; */
- }
 
 
 
- h2 {
-   color: rgb(29, 34, 34);
-   /* text-align: center; */
- }
+
+
+
 
 
  .huse {
@@ -124,10 +118,6 @@
 
 
 
-
- h1 {
-   color: aqua;
- }
 
  body {
    position: relative;
@@ -174,18 +164,13 @@
 
  }
 
-.vvv{
-  position:sticky 
-  ;
-  z-index: 999;
-}
 
  .nbaar-home {
 
-   height: 80vh;
+   height: 60vh;
    width: 100%;
 
-   background-image: url(/Work-project-1/imajes/education.jpg);
+   background-image: url(/Work-project-1/imajes/edu.jpg);
 
    background-repeat: no-repeat;
    background-size: cover;
@@ -224,8 +209,8 @@
 
    border-radius: 8px;
    text-align: center;
-   margin-top: 4%;
-   /* height: 60vh; */
+
+
    background-color: rgb(44, 17, 70);
 
  }
@@ -340,6 +325,7 @@
 
  }
 
+
  /* 
   
  @media screen and (m-width:400px) {
@@ -355,7 +341,7 @@
    .conn {
      position: relative;
      width: 40%;
-     
+
 
    }
 
@@ -364,42 +350,79 @@
  }
 
 
- 
+
  @media screen and (max-width:500px) {
 
-   .received-chats{
-position: absolute;
-width: 100%;
+   .received-chats {
+     position: absolute;
+     width: 100%;
    }
-.outgoing-chat-msg{
 
-  position: absolute;
-}
-}
+   .outgoing-chat-msg {
+
+     position: absolute;
+   }
+ }
+
+ /* 
+@media screen and (max-width:500px) {
+
+  .mge2{
+
+margin-right: ;
+
+  }
+  
+
+} */
 
 
-
-
- @media screen and (min-width:280px) {
+ @media screen and (max-width:420px) {
 
    body {
      position: relative;
-     /* overflow-x: hidden; */
 
+     .conn {
+       width: 100%;
+
+       .form-row {
+
+         width: 104%;
+       }
+
+       .msg-header-img {}
+     }
+
+     /* overflow-x: hidden; */
    }
-.conn{
-  width: 60%;
-}
+
+
+
+
+   fixing small imges to be responsive */ .imgg {
+     margin-left: -30px;
+   }
+
+   .conn {
+     width: 30%;
+   }
+
+   .form-row {
+
+     width: 100%;
+   }
+
    .conn-under {
      height: 40vh;
    }
-   .chatting{
-    min-height: 90vh;
+
+   .chatting {
+     min-height: 90vh;
    }
-   
-.chat-page{
-  height: 100%;
-}
+
+   .chat-page {
+     height: 100%;
+   }
 
  }
 
@@ -419,19 +442,19 @@ width: 100%;
  }
 
 
-@media screen and (min-width:900px) {
+ @media screen and (min-width:900px) {
 
-  body {
-    position: relative;
-    overflow-x: hidden;
+   body {
+     position: relative;
+     overflow-x: hidden;
 
-  }
+   }
 
-  .conn {
-    width:30% ;
-  }
+   .conn {
+     width: 30%;
+   }
 
-}
+ }
 
 
 
@@ -591,39 +614,13 @@ width: 100%;
    margin-left: -5px;
  }
 
- .received-chat-img {
-   min-height: 50px;
-   width: 50px;
-   background-color: burlywood;
-   position: relative;
-   float: left;
- }
-
-
-
  .mge2 {
    width: 20px;
-   position: absolute;
-   margin: 0 -155px;
+   margin: 0px 20px;
+
+   float: left;
    border-radius: 100%;
- }
 
-
- .received-msg {
-   padding: 0 0 0 50px;
-   vertical-align: top;
-   width: 70%;
- }
-
-
- .received-msg-inbox p {
-   clear: left;
-   background: #efefef none repeat scroll 0 0;
-   font-size: 14px;
-   color: #646464;
-   border-radius: 10px;
-   margin: 0;
-   padding: 5px 10px 15px 12px;
  }
 
  .time {
@@ -634,17 +631,63 @@ width: 100%;
  }
 
  .received-chats {
-   margin: 180px 0 0 0;
+   float: left;
+   margin: 18px 0 0 0;
+   border: 10px rgb(0, 1, 5);
+   width: 70%;
+
+   padding: 0 0 2px;
+ }
+
+ .received-msg-inbox {
+
+   margin-left: 50px;
+ }
+
+ .received-chats p {
+
+   background: #efefef none repeat scroll 0 0;
+   color: #646464;
+   border-radius: 10px;
+   margin: 0;
+   padding: 5px 10px 15px 12px;
+   font-size: 14px;
+
+
  }
 
 
 
 
 
+ /* DownRow */
+ .down-row {
+
+   border: 6px rgb(45, 39, 80);
+
+   margin: 16% 0 0 0;
+ }
+
+.home-page{
+  color:#999 ;
+}
+
+ .none-list ul li {
 
 
+   list-style-type: none;
+ }
+
+ a{
+text-decoration: none;
+color: #999;
+
+ }
 
 
+.copp{
+  color: #3f1f69;
+}
 
 
 
@@ -669,7 +712,7 @@ width: 100%;
  .outgoing-chat-msg {
    float: right;
    margin: 18px 0 0 0;
-
+   border: 10px rgb(0, 1, 5);
    width: 70%;
 
    padding: 0 0 2px;
@@ -695,8 +738,10 @@ width: 100%;
  }
 
 
+
  .outgoing-msg-inbox {
    margin-right: 50px;
+
 
 
  }
