@@ -333,6 +333,7 @@
  .ulist {
 
    margin-left: 80px;
+   color: #3f1f69;
 
  }
 
@@ -696,11 +697,17 @@ color: #999;
  }
 
 
-.copp{
+.cop{
   color: #3f1f69;
 }
 
 
+
+.custom-text-color{
+
+color: rgb(99, 42, 165);
+
+}
 
 
 
