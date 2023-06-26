@@ -165,12 +165,17 @@
  }
 
 
- .nbaar-home {
+
+ .con{
 
    height: 60vh;
    width: 100%;
 
+<<<<<<< HEAD
    background-image: url(/Work-project-1/imajes/edu.jpg);
+=======
+   background-image:url(education.jpg);
+>>>>>>> 7f28751ba616bdb6b6e82f62c8305c0988f7849b
 
    background-repeat: no-repeat;
    background-size: cover;
@@ -196,14 +201,22 @@
 
  }
 
- .con {
+ /*.con {
 
    margin-top: 4%;
 
    text-align: center;
    color: white;
 
- }
+ }*/
+.con {
+
+   
+
+ background-color:pink;
+ 
+
+}
 
  .conn {
 
@@ -217,7 +230,7 @@
 
  .conn-under {
 
-   height: 30vh;
+   height: 20vh;
  }
 
 
