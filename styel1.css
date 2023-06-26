@@ -39,7 +39,7 @@
  .ball {
    position: relative;
    text-align: center;
-   top: 8vh;
+   top: 2vh;
 
 
  }
@@ -47,8 +47,8 @@
  .bull {
    position: relative;
    text-align: center;
-   top: 8vh;
-   right: 10%;
+   top: 2vh;
+
 
 
  }
