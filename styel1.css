@@ -136,6 +136,7 @@
    background-color: rgb(15, 2, 27);
    min-height: 100vh;
    width: 100%;
+   text-align: center;
  }
 
 
@@ -182,11 +183,11 @@
  }
 
  .book {
-   width: 100vw;
-   position: absolute;
+   
+   /* position: absolute; */
    background-size: cover;
    text-align: center;
-   min-height: 30vh;
+   /* min-height: 30vh; */
 
  }
 
@@ -523,11 +524,10 @@ margin-right: ;
    background: rgb(44, 17, 70);
  }
 
+.coa{
 
- .bull {
-   position: relative;
-   text-align: center;
- }
+margin-top: 4vh;
+}
 
 
  .greeksPhoto {
@@ -546,7 +546,9 @@ margin-right: ;
    min-height: 5vh;
  }
 
-
+.web{
+  background-size: contain;
+}
 
 
 
