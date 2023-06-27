@@ -59,7 +59,10 @@
 
  }
 
+.cp{
 
+  margin-left: 4em;bb
+}
 
 
 
@@ -88,7 +91,7 @@
 
 
  .lunch {
-   margin-top: 3%;
+   margin-top: 5%;
 
  }
 
@@ -274,8 +277,9 @@
  }
 
  .imj {
-   width: 15%;
-   margin-left: -5%;
+   width: 20%;
+   margin-left:1.5em ;
+   position: absolute;
  }
 
  .imja {
@@ -299,7 +303,7 @@
 
  .imjj {
    width: 21%;
-   margin-left: -4%;
+   margin-left: -25%;
  }
 
  .fb {
@@ -723,6 +727,11 @@ color: rgb(99, 42, 165);
 
 }
 
+.goodpics{
+
+width: 30vw;
+
+}
 
 
 
