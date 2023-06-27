@@ -61,7 +61,7 @@
 
 .cp{
 
-  margin-left: 4em;bb
+  margin-left: 4em;
 }
 
 
@@ -92,7 +92,6 @@
 
  .lunch {
    margin-top: 5%;
-
  }
 
 
@@ -136,7 +135,7 @@
 
  .home-page {
 
-   background-color: rgb(15, 2, 27);
+   background-color: rgb(42, 34, 49);
    min-height: 100vh;
    width: 100%;
    text-align: center;
@@ -212,14 +211,15 @@
    color: white;
 
  }*/
+
+
+/* 
 .con {
 
-   
-
- background-color:pink;
+ /* background-color:pink; */
  
 
-}
+
 
  .conn {
 
@@ -247,9 +247,6 @@
  .footer {
 
    padding-top: 3%;
-
-
-
  }
 
 
@@ -338,14 +335,14 @@
 
  .ulist {
 
-   margin-left: 80px;
-
-
+   margin-left: 20%;
  }
+
+
+
  .nav-item{
-
-  color: darkblue;
- }
+padding:0 5% 
+ } 
 
 
  /* 
@@ -386,7 +383,7 @@
    }
  }
 
-  
+/*   
 @media screen and (max-width:400px) {
 
    .coa{
@@ -402,7 +399,7 @@ wi
 
    }
 
-} 
+}  */
 
 
  @media screen and (max-width:420px) {
@@ -417,8 +414,6 @@ wi
 
          width: 104%;
        }
-
-       .msg-header-img {}
      }
 
      /* overflow-x: hidden; */
@@ -427,7 +422,7 @@ wi
 
 
 
-   fixing small imges to be responsive */ .imgg {
+  /* fixing small imges to be responsive */ .imgg {
      margin-left: -30px;
    }
 
@@ -667,25 +662,20 @@ text-align: left;
    margin: 18px 0 0 0;
    border: 10px rgb(0, 1, 5);
    width: 70%;
-
    padding: 0 0 2px;
  }
 
  .received-msg-inbox {
-
    margin-left: 50px;
  }
 
  .received-chats p {
-
    background: #efefef none repeat scroll 0 0;
    color: #646464;
    border-radius: 10px;
    margin: 0;
    padding: 5px 10px 15px 12px;
    font-size: 14px;
-
-
  }
 
 
@@ -694,9 +684,7 @@ text-align: left;
 
  /* DownRow */
  .down-row {
-
    border: 6px rgb(45, 39, 80);
-
    margin: 16% 0 0 0;
  }
 
@@ -705,15 +693,12 @@ text-align: left;
 }
 
  .none-list ul li {
-
-
    list-style-type: none;
  }
 
  a{
 text-decoration: none;
 color: #999;
-
  }
 
 .nav-button{
@@ -723,13 +708,21 @@ border: 2px solid #3f1f69 ;
 
 .nav-button:hover{
 background-color:#646464 ;
-
 }
 .cop{
   color: #3f1f69;
 }
 
+.ulist li a:hover{
 
+background-color: #3f1f69;
+
+}
+
+.navbar-brand:hover{
+
+background-color: #3f1f69;
+}
 
 .custom-text-color{
 
@@ -738,13 +731,13 @@ color: rgb(99, 42, 165);
 }
 
 .goodpics{
-
 width: 30vw;
-
 }
 
 
-
+.rgoodpics{
+  width: 50vw;
+}
 
 
 
@@ -765,7 +758,6 @@ width: 30vw;
    margin: 18px 0 0 0;
    border: 10px rgb(0, 1, 5);
    width: 70%;
-
    padding: 0 0 2px;
  }
 
@@ -792,9 +784,6 @@ width: 30vw;
 
  .outgoing-msg-inbox {
    margin-right: 50px;
-
-
-
  }
 
 
@@ -814,7 +803,6 @@ width: 30vw;
 
 
  .modalClass {
-
    background-color: blue;
    float: right;
    margin-right: 5px;
