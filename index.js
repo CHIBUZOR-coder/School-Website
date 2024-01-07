@@ -22,28 +22,106 @@ document.addEventListener("DOMContentLoaded", function () {
   setInterval(changeHeroBackgroundImage, 5000);
 });
 
+// document.addEventListener("DOMContentLoaded", function () {
+//   var elements = document.querySelectorAll(".moving-element");
+
+//   function animateElements() {
+//     elements.forEach(function (element, index) {
+//       setTimeout(function () {
+//         element.style.transform = "translateX(100%)"; // Move to the right
+//         element.style.opacity = "0"; // Make it invisible
+//       }, index * 1000); // Adjust the delay as needed
+
+//       setTimeout(
+//         function () {
+//           // Reset properties after a delay
+//           element.style.transform = "translateX(0)";
+//           element.style.opacity = "1";
+//         },
+//         index * 1000 + 750
+//       ); // Adjust the delay as needed
+//     });
+
+//     // Call the function recursively for continuous looping
+//     setTimeout(animateElements, elements.length * 1500);
+//   }
+
+//   // Call the animation function
+//   animateElements();
+// });
+
+// document.addEventListener("DOMContentLoaded", function () {
+//   var elements = document.querySelectorAll(".moving-element");
+
+//   function animateElements() {
+//     elements.forEach(function (element, index) {
+//       // Determine the animation group based on index
+//       var group = index % 4;
+
+//       setTimeout(function () {
+//         if (group === 0 || group === 2) {
+//           element.style.transform = "translateY(-100%)"; // Move up
+//         } else {
+//           element.style.transform = "translateX(100%)"; // Move to the right
+//         }
+//         element.style.opacity = "0"; // Make it invisible
+//       }, index * 1500); // Adjust the delay as needed
+
+//       setTimeout(
+//         function () {
+//           // Reset properties after a delay
+//           element.style.transform = "translateX(0) translateY(0)";
+//           element.style.opacity = "1";
+//         },
+//         index * 1500 + 750
+//       ); // Adjust the delay as needed
+//     });
+
+//     // Call the function recursively for continuous looping
+//     setTimeout(animateElements, elements.length * 1500);
+//   }
+
+//   // Call the animation function
+//   animateElements();
+// });
+
+
+
+
+
+
+
+
+
  document.addEventListener("DOMContentLoaded", function () {
    var elements = document.querySelectorAll(".moving-element");
 
    function animateElements() {
      elements.forEach(function (element, index) {
+       // Determine the animation group based on index
+       var group = index % 4;
+
        setTimeout(function () {
-         element.style.transform = "translateX(100%)"; // Move to the right
+         if (group === 0 || group === 2) {
+           element.style.transform = "translateY(-100%)"; // Move up
+         } else {
+           element.style.transform = "translateY(100%)"; // Move down
+         }
          element.style.opacity = "0"; // Make it invisible
-       }, index * 1000); // Adjust the delay as needed
+       }, index * 1500); // Adjust the delay as needed
 
        setTimeout(
          function () {
            // Reset properties after a delay
-           element.style.transform = "translateX(0)";
+           element.style.transform = "translateY(0)";
            element.style.opacity = "1";
          },
-         index * 1000 + 500
+         index * 1500 + 750
        ); // Adjust the delay as needed
      });
 
      // Call the function recursively for continuous looping
-     setTimeout(animateElements, elements.length * 1000);
+     setTimeout(animateElements, elements.length * 1500);
    }
 
    // Call the animation function

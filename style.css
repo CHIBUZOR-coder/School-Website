@@ -4,7 +4,7 @@
 
 .Hero {
   background: url(Imagess/unipics.jpg) no-repeat center center/ cover;
-  height: 90vh;
+  height: 95vh;
   transition: background-image 1s ease;
   background-attachment: fixed;
   transition: all 1s ease-in-out;
@@ -34,11 +34,11 @@
 
 .hero {
   position: relative;
-  top: 400px;
+  top: 350px;
   height: 150px;
-  background-color: white;
+  /* background-color: white; */
   display: flex;
-gap: 5px;
+  gap: 5px;
   justify-content: center;
   align-items: center;
 }
@@ -53,21 +53,27 @@ body {
 }
 
 .moving-element {
-
   width: 200px;
   height: 50px;
   background-color: #3498db;
   color: #fff;
+display: flex;
 
- 
   align-items: center;
   justify-content: center;
   font-size: 12px;
-  transition: transform 0.5s ease-in-out;
+  transition: transform 1s ease-in-out;
 }
 
-.logo{
+.moving-container {
+  position: relative;
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+}
 
+.logo {
   width: 70px;
   height: 70px;
 }
@@ -76,3 +82,23 @@ body {
 
 
 
+@media (max-width:700px) {
+
+  .moving-container{
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+  }
+
+.moving-element{
+  position: relative;
+  width: 80%;
+}
+
+
+
+
+
+
+  
+}
