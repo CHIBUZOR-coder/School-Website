@@ -36,7 +36,11 @@
   position: relative;
   top: 400px;
   height: 150px;
-  /* background-color: blue; */
+  background-color: white;
+  display: flex;
+gap: 5px;
+  justify-content: center;
+  align-items: center;
 }
 
 body {
@@ -47,16 +51,28 @@ body {
 .roll {
   background-color: crimson;
 }
-/* 
+
 .moving-element {
-  position: absolute;
+
   width: 200px;
   height: 50px;
   background-color: #3498db;
   color: #fff;
-  display: flex;
+
+ 
   align-items: center;
   justify-content: center;
   font-size: 12px;
   transition: transform 0.5s ease-in-out;
-} */
+}
+
+.logo{
+
+  width: 70px;
+  height: 70px;
+}
+
+
+
+
+

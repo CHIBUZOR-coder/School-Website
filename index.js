@@ -22,4 +22,30 @@ document.addEventListener("DOMContentLoaded", function () {
   setInterval(changeHeroBackgroundImage, 5000);
 });
 
+ document.addEventListener("DOMContentLoaded", function () {
+   var elements = document.querySelectorAll(".moving-element");
 
+   function animateElements() {
+     elements.forEach(function (element, index) {
+       setTimeout(function () {
+         element.style.transform = "translateX(100%)"; // Move to the right
+         element.style.opacity = "0"; // Make it invisible
+       }, index * 1000); // Adjust the delay as needed
+
+       setTimeout(
+         function () {
+           // Reset properties after a delay
+           element.style.transform = "translateX(0)";
+           element.style.opacity = "1";
+         },
+         index * 1000 + 500
+       ); // Adjust the delay as needed
+     });
+
+     // Call the function recursively for continuous looping
+     setTimeout(animateElements, elements.length * 1000);
+   }
+
+   // Call the animation function
+   animateElements();
+ });
