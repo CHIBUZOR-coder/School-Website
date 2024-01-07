@@ -1,472 +1,302 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="styel1.css">
-    <script src="https://kit.fontawesome.com/d81501edd7.js" crossorigin="anonymous"></script>
-</head>
-
-<body>
-
-    <div class="container-fluid con">
-
-        <nav class="navbar navbar-light    navbar-expand-md">
-
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+          <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script> 
+        <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="fluid Hero">
+         <div class="sticky">
+                <nav class="navbar bg-dark navbar-expand-lg ">
             <div class="container-fluid">
-                <a class="navbar-brand  text-white cop" href="#">
-                    <h2>Greeks for Greeks </h2>
+                <a
+                    class="navbar-brand"
+                    href="/"
+                    contenteditable="false"
+                    style="cursor: pointer;"
+                >
+                    <img src="img/core-img/logo2.png" alt="Logo">
                 </a>
-
-                <button type="button" class="navbar-toggler " data-bs-target="#nav" data-bs-toggle="collapse"
-                    aria-controls="nav" aria-label="Expand Navigation">
-
-                    <span style="text-align: center;" class="navbar-toggler-icon">
-
-                    </span>
-
+                <button
+                    class="navbar-toggler btn-secondary "
+                    type="button "
+                    data-bs-toggle="collapse"
+                    data-bs-target="#worldNav"
+                    aria-controls="worldNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="text-white">MENU</span>
+                    <span class="navbar-toggler-icon"></span>
                 </button>
-
-                <div class="collapse  navbar-collapse  " id="nav">
-
-
-                    <ul class=" navbar-nav ulist">
-
-                        <li class="nav-item text-primary">
-                            <a class="text-white nav-link" href="#">
-                                <h3>Home</h3>
+                <div
+                    class="collapse navbar-collapse"
+                    id="worldNav"
+                  
+                >
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a
+                                class="nav-link"
+                                href="/"
+                                contenteditable="false"
+                                style="cursor: pointer;"
+                            >
+                                <i class="fas fa-home" aria-hidden="true"></i>
+                                News
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="text-white nav-link" href="./service.html">
-                                <h3>Services</h3>
+                            <a
+                                class="nav-link"
+                                href="noun-fee-checker"
+                                contenteditable="false"
+                                style="cursor: pointer;"
+                            >
+                                <i class="fas fa-calculator" aria-hidden="true"></i>
+                                Fee Analyzer
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="text-white nav-link" href="./About.html">
-                                <h3>About</h3>
+                            <a
+                                class="nav-link"
+                                href="noun-e-courseware"
+                                contenteditable="false"
+                                style="cursor: pointer;"
+                            >
+                                <i class="fas fa-book" aria-hidden="true"></i>
+                                Course Material
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="text-white nav-link" href="./product.html">
-                                <h3>Products</h3>
+                            <a
+                                class="nav-link"
+                                href="noun-past-questions"
+                                contenteditable="false"
+                                style="cursor: pointer;"
+                            >
+                                <i class="fas fa-file-alt" aria-hidden="true"></i>
+                                Past Questions
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="text-white nav-link" href="./contact.html">
-                                <h3>Contact</h3>
+                            <a
+                                class="nav-link"
+                                href="http://quiz.puredu.net"
+                                contenteditable="false"
+                                style="cursor: pointer;"
+                            >
+                                <i class="fas fa-pencil-alt" aria-hidden="true"></i>
+                                Mock Exam
                             </a>
                         </li>
-
-
-
-
-                    </ul>
-
-
-                </div>
-
-            </div>
-
-        </nav>
-
-
-    </div>
-
-    <!-- Page Content  -->
-
-
-
-    <div class="container-fluid  home-page">
-
-
-        <div class="row  ">
-            <div class="col coa">
-                <p class="headn">WAY TO GO </p>
-                <div class="row">
-
-                    <div class="col  coa-chil">
-                        <p>Select a course, considering your skills, assets, strength and interest.</p>
-                    </div>
-
-
-                    <div class="col">
-                        <p class=""> Seak guidance. Talk to proffesionals, Mentors or academic advisors for insights.
-                        </p>
-                    </div>
-                </div>
-                <img class="goodpics" src="imajes/course.jpg" alt="">
-
-            </div>
-
-
-            <div class=" col coa ">
-                <div class="row">
-                    <p class="headn">HOW CAN YOU HELP</p>
-
-                    <div class="col  coa-chil">
-                        <p> Attend programs designe to help you get familiar with the campus</p>
-                    </div>
-
-
-                    <div class="col">
-                        <p class="">Meet fellow students and learn about availabe resources and support service
-                            . </p>
-                    </div>
-
-                </div>
-
-                <img src="imajes/nav-image.webp" class=" goodpics" alt="">
-
-            </div>
-
-            <div class="col  coa">
-
-                <p class="headn">CREATING A BETTER FUTURE</p>
-                <div class="row">
-                    <div class="col  ">
-                        <p>Archiev your dreams in learning technology and making good impact.</p>
-                    </div>
-
-
-                    <div class="col">
-                        <p class="">What ever you are interested in, support positive
-                            change with determnation. </p>
-                    </div>
-
-                </div>
-
-
-                <img class="  goodpics" src="./imajes/page-image2.webp" alt="">
-                <!-- <p>
-                <h3>Archiev your dreams in learning technology and making impact</h3>
-                </p> -->
-
-                <!-- -- Button trigger modal -->
-                <!-- <div class="lunch">
-                    <button type="button" class="btn btn-success login-button" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        Login/Register
-                    </button>
-                
-                </div>
-                 -->
-
-                <!-- Modal 
-                <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                
-                    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-md">
-                        <div class="modal-content">
-                
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                
+                        <li class="nav-item">
+                            <a
+                                class="nav-link"
+                                href="noun-personalised-exam-table"
+                                contenteditable="false"
+                                style="cursor: pointer;"
+                            >
+                                <i class="fas fa-table" aria-hidden="true"></i>
+                                Exam Table
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a
+                                class="nav-link dropdown-toggle"
+                                href="#"
+                                id="navbarDropdown1"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                                contenteditable="false"
+                                style="cursor: pointer;"
+                            >
+                                <i class="fas fa-briefcase" aria-hidden="true"></i>
+                                Project Market
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                                <a
+                                    class="dropdown-item"
+                                    href="ProjectMarket"
+                                    contenteditable="false"
+                                    style="cursor: pointer;"
+                                >Submit Topic</a>
+                                <a
+                                    class="dropdown-item"
+                                    href="GetProjectDoc"
+                                    contenteditable="false"
+                                    style="cursor: pointer;"
+                                >Get Material</a>
                             </div>
-                
-                
-                            <div class="modal-body">
-                
-                                <div class="container bg-dark ">
-                
-                                    <div class="row row-cols-1 gy-5">
-                
-                                        <div class="col">
-                
-                                            <h2 class="text-center h2b"> Sign in</h2>
-                
-                                            <p class="text-center ptt">
-                
-                                                Sign in to manage all your devices</p>
-                
-                                            <form action="">
-                
-                                                <div class="form-floating pass">
-                
-                                                    <input class="form-control" type="email" id="email" placeholder="your mail">
-                
-                                                    <label class="form-label text-dark" for="email">
-                                                        <img class="imj" src="./imajes/rmail.png" alt="">
-                
-                                                        <span class="cp">Email</span>
-                
-                                                    </label>
-                                                </div>
-                
-                                                <div class="form-floating pass">
-                                                    <input class="form-control" type="password" placeholder="password" id="pass">
-                
-                                                    <label class="form-label text-dark" for="pass">
-                
-                                                        <img class="imjj" src="./imajes/passsssss.png" alt="">
-                
-                                                        <span class="">Password</span>
-                
-                                                    </label>
-                
-                
-                                                </div>
-                
-                                                <div class="pas">
-                
-                                                    <a href="./recover.html" target="_blank" class="pas">Forgot your
-                                                        password</a>
-                
-                                                </div>
-                
-                
-                                                <div class="d-grid">
-                
-                                                    <button type="submit" class="btn btn-lg btn-primary nn">Sign
-                                                        in</button>
-                
-                                                </div>
-                
-                
-                                                <p class="">Do not have an account? <a target="_blank" href="./singn.html">
-                                                        Sign
-                                                        up</a></p>
-                                            </form>
-                
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary">Save changes</button>
-                                </div>
-                            </div> 
-                        </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a
+                                class="nav-link dropdown-toggle"
+                                href="#"
+                                id="navbarDropdown2"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                                contenteditable="false"
+                                style="cursor: pointer;"
+                            >
+                                <i class="fas fa-file-alt" aria-hidden="true"></i>
+                                E Slip
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                                <a
+                                    class="dropdown-item"
+                                    href="noun-exam-clearance.php"
+                                    contenteditable="false"
+                                    style="cursor: pointer;"
+                                >Exam Clearance Slip</a>
+                                <a
+                                    class="dropdown-item"
+                                    href="noun-e-project-slip.php"
+                                    contenteditable="false"
+                                    style="cursor: pointer;"
+                                >Generate Project Slip</a>
+                                <a
+                                    class="dropdown-item"
+                                    href="noun-e-seminar-slip.php"
+                                    contenteditable="false"
+                                    style="cursor: pointer;"
+                                >Generate Seminar Slip</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a
+                                class="nav-link dropdown-toggle"
+                                href="#"
+                                id="navbarDropdown3"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                                contenteditable="false"
+                                style="cursor: pointer;"
+                            >
+                                <i class="fas fa-graduation-cap" aria-hidden="true"></i>
+                                Admission
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown3">
+                                <a
+                                    class="dropdown-item"
+                                    href="noun-admission_prog.php"
+                                    contenteditable="false"
+                                    style="cursor: pointer;"
+                                >Programmes</a>
+                                <a
+                                    class="dropdown-item"
+                                    href="noun_study_center.php"
+                                    contenteditable="false"
+                                    style="cursor: pointer;"
+                                >Study Centres</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a
+                                class="nav-link dropdown-toggle"
+                                href="#"
+                                id="navbarDropdown3"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                                contenteditable="false"
+                                style="cursor: pointer;"
+                            >
+                                <i class="fas fa-ellipsis-h" aria-hidden="true"></i>
+                                Others
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown3">
+                                <a
+                                    class="dropdown-item"
+                                    href="noun-file-cabinet"
+                                    contenteditable="false"
+                                    style="cursor: pointer;"
+                                >File Cabinet</a>
+                                <a
+                                    class="dropdown-item"
+                                    href="noun-non-examinable-courses"
+                                    contenteditable="false"
+                                    style="cursor: pointer;"
+                                >Non-Exam Courses</a>
+                                <a
+                                    class="dropdown-item"
+                                    href="https://puredu.net/noun-tma-questions-and-answers-box"
+                                    contenteditable="false"
+                                    style="cursor: pointer;"
+                                >TMA Q &amp; A</a>
+                                <a
+                                    class="dropdown-item"
+                                    href="noun-gpa-calculator.php"
+                                    contenteditable="false"
+                                    style="cursor: pointer;"
+                                >GPA Calculator</a>
+                                <a
+                                    class="dropdown-item"
+                                    href="noun-cgpa-calculator.php"
+                                    contenteditable="false"
+                                    style="cursor: pointer;"
+                                >CGPA Calculator</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <div id="search-wrapper">
+                        <form action="searchresult" onsubmit="return validateSearch()">
+                            <input
+                                type="text"
+                                id="search"
+                                name="word"
+                                placeholder="Search something..."
+                            >
+                            <div id="close-icon"></div>
+                            <input
+                                class="d-none"
+                                type="submit"
+                                name="result"
+                                value=""
+                            >
+                        </form>
                     </div>
-                    <br>
-                
-                </div> -->
-
-
-
-
-            </div>
-
-
-
-
-            <div class="col  coa">
-
-                <p class="headn">GIVE NOW</p>
-                <div class="row">
-
-                    <div class="col  ">
-                        <p>Give some attention to others, helping them understand. This helps you grow.</p>
-                    </div>
-
-                    <div class="col  ">
-                        <p>Give proper attention and time to positve step towards archiving your dream.
-                        </p>
-                    </div>
+                    <script>
+                            function validateSearch() {
+                                var searchInput = document.getElementById("search").value;
+                                if (searchInput.trim() === "") {
+                                    alert("Please enter a search term.");
+                                    return false; 
+                                }
+                                return true;
+                            }
+                    </script>
                 </div>
-                <img class=" goodpics" src="imajes/good.jpg" alt="">
-                <!-- <p>
-                <h3>Archiev your dreams in learning technology and making impact</h3>
-                </p> -->
-
             </div>
-
-
-
-            <div class="col  coa">
-
-                <p class="headn">TEAM WORK</p>
-                <div class="row">
-                    <div class="col  ">
-                        <p>If everyone is moving forward together, then success takes care of itself.</p>
-                    </div>
-                    <div class="col  ">
-                        <p>Team work in has the incredible power to increase productivity and performance </p>
-                    </div>
-                </div>
-                <img class=" goodpics" src="imajes/afro.jpg" alt="">
-                <!-- <p>
-                            <h3>Archiev your dreams in learning technology and making impact</h3>
-                            </p> -->
-
+        </nav>
+         </div>
+          <div class="hero container-fluid">
+                 <div class="moving-element" id="element1">1</div>
+      <div class="moving-element" id="element2">2</div>
+      <div class="moving-element" id="element3">3</div>
+      <div class="moving-element" id="element4">4</div>
+      <div class="moving-element" id="element5">5</div>
+                  
             </div>
-
-
-            <div class="col  coa">
-
-                <p class="headn">RESEARCH</p>
-                <div class="row">
-                    <div class="col  ">
-                        <p>Equipped research facilites, where knowledge and discovery are found. </p>
-                    </div>
-                    <div class="col  ">
-                        <p>State-of-the-arts labs equipped with cutting edgetech, igniting curios great minds</p>
-                    </div>
-                </div>
-                <img class=" goodpics" src="imajes/search.jpg" alt="">
-                <!-- <p>
-                            <h3>Archiev your dreams in learning technology and making impact</h3>
-                            </p> -->
-
-            </div>
-
-
-
         </div>
-        <hr>
-
-
-        <!-- Footer likns -->
-
-        <div class="row down-row">
-
-            <div class="col">
-                <h1>INDIGENOUS ENGAGEMENT</h1>
-                <p>City University in Canada acknowledges that we are on the traditional territories of First Nations,
-                    Metis, and Inuit
-                    Peoples. In our acknowledgement, we would like to address each of the territories we work, learn,
-
-
-                </p>
-            </div>
-
-
-
-            <div class="col">
-                <h1>FOLLOW US</h1>
-
-                <div class="row">
-
-                    <div class="col">
-                        <a href=""><i class="fa-brands fa-facebook fa-beat fa-2xl"></i></a>
-                    </div>
-
-                    <div class="col">
-                        <a href=""><i class="fa-brands fa-twitter fa-bounce fa-2xl"></i></a>
-                    </div>
-
-                    <div class="col">
-
-                        <a href=""><i class="fa-brands fa-instagram fa-spin fa-2xl"></i></a>
-                    </div>
-
-                    <div class="col">
-
-                        <a href=""><i class="fa-brands fa-linkedin fa-flip fa-2xl"></i></a>
-                    </div>
-
-
-                </div>
-
-
-            </div>
-
-
-
-
-
-
-            <div class="col none-list">
-                <h1>PROGRAMS</h1>
-                <ul none-list>
-
-                    <li>
-                        <a href="#">
-                            Master of Counselling
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#">
-                            MEd in Leadership
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#">
-                            Bachelor of Arts in Management
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#">
-                            Continuing Education
-
-                        </a>
-                    </li>
-
-                </ul>
-
-            </div>
-
-
-            <div class="col none-list">
-                <h1>USEFUL LINKS</h1>
-
-                <ul>
-
-                    <li>
-                        <a href="#">
-                            CityU Library
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#">
-                            Current Students
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#">
-                            Prospective Students
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#">
-                            News and Events
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#">
-                            CityU Canada Blog
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#">
-                            Faculty and Staff
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#">
-                            Catalog
-                        </a>
-                    </li>
-
-
-
-                </ul>
-
-
-            </div>
-
-
-        </div>
-<div class="buttom-div">
-
-
-</div>
-
-    </div>
-
-    <script src="./bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
-</body>
-
+         <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+        <script src="index.js"></script>
+    </body>
 </html>
