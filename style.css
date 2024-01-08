@@ -34,9 +34,9 @@
 
 .hero {
   position: relative;
-  top: 350px;
+  top: 300px;
   height: 150px;
-  /* background-color: white; */
+ background-color: ; 
   display: flex;
   gap: 5px;
   justify-content: center;
@@ -53,23 +53,27 @@ body {
 }
 
 .moving-element {
-  width: 200px;
+  position: relative;  
+  width: 120px;
   height: 50px;
-  background-color: #3498db;
+  background-color:transparent;
+  /* background-color:rgba(10, 8, 8, 0); */
   color: #fff;
   display: flex;
+  border: 1px solid rgb(235, 210, 234);
  box-shadow: 0 3px 20px rgba(0, 0, 0, 1);
   border-radius: 5px;
   align-items: center;
   justify-content: center;
   font-size: 12px;
+text-Shadow:2px 2px 8px #000000;
   transition: transform 1s ease-in-out;
 }
 
 .moving-container {
   position: relative;
   display: flex;
-  gap: 5px;
+  gap: 10px;
   justify-content: center;
   align-items: center;
  

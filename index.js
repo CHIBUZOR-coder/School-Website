@@ -2,8 +2,8 @@ document.addEventListener("DOMContentLoaded", function () {
   // Array of background image URLs for the hero section
   var heroImages = ["Imagess/unipics.jpg", "Imagess/study.jpg"];
   var currentIndex = 0;
-  var text = document.querySelector(".text");
-  console.log(text);
+  var moving_element = document.querySelectorAll(".moving-element");
+  console.log(moving_element);
 
   function changeHeroBackgroundImage() {
     currentIndex = (currentIndex + 1) % heroImages.length;
@@ -12,9 +12,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Apply specific text color class based on the index
     if (currentIndex === 1) {
-      text.style.color = "white";
+      for (var i = 0; i < moving_element.length; i++) {
+         moving_element[i].style.backgroundColor = "rgba(10, 8, 8, 0.2)";
+        moving_element[i].style.color = "white";
+      }
     } else {
-      text.style.color = "black";
+      for (var i = 0; i < moving_element.length; i++) {
+        moving_element[i].style.backgroundColor = "rgba(10, 8, 8, 0.5)";
+        
+      }
     }
   }
 
@@ -85,45 +91,37 @@ document.addEventListener("DOMContentLoaded", function () {
 //   animateElements();
 // });
 
+document.addEventListener("DOMContentLoaded", function () {
+  var elements = document.querySelectorAll(".moving-element");
 
+  function animateElements() {
+    elements.forEach(function (element, index) {
+      // Determine the animation group based on index
+      var group = index % 4;
 
+      setTimeout(function () {
+        if (group === 0 || group === 2) {
+          element.style.transform = "translateY(-100%)"; // Move up
+        } else {
+          element.style.transform = "translateY(100%)"; // Move down
+        }
+        element.style.opacity = "0"; // Make it invisible
+      }, index * 1500); // Adjust the delay as needed
 
+      setTimeout(
+        function () {
+          // Reset properties after a delay
+          element.style.transform = "translateY(0)";
+          element.style.opacity = "1";
+        },
+        index * 1500 + 750
+      ); // Adjust the delay as needed
+    });
 
+    // Call the function recursively for continuous looping
+    setTimeout(animateElements, elements.length * 1500);
+  }
 
-
-
-
- document.addEventListener("DOMContentLoaded", function () {
-   var elements = document.querySelectorAll(".moving-element");
-
-   function animateElements() {
-     elements.forEach(function (element, index) {
-       // Determine the animation group based on index
-       var group = index % 4;
-
-       setTimeout(function () {
-         if (group === 0 || group === 2) {
-           element.style.transform = "translateY(-100%)"; // Move up
-         } else {
-           element.style.transform = "translateY(100%)"; // Move down
-         }
-         element.style.opacity = "0"; // Make it invisible
-       }, index * 1500); // Adjust the delay as needed
-
-       setTimeout(
-         function () {
-           // Reset properties after a delay
-           element.style.transform = "translateY(0)";
-           element.style.opacity = "1";
-         },
-         index * 1500 + 750
-       ); // Adjust the delay as needed
-     });
-
-     // Call the function recursively for continuous looping
-     setTimeout(animateElements, elements.length * 1500);
-   }
-
-   // Call the animation function
-   animateElements();
- });
+  // Call the animation function
+  animateElements();
+});
