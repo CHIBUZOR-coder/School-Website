@@ -33,7 +33,7 @@
 }
 
 .navb {
-  background-color: rgba(10, 8, 8, 0.6);
+  background-color: rgba(10, 8, 8, 0.92);
 }
 .navbar-nav .nav-link {
   color: white !important; /* Change the text color to your desired color */
@@ -120,6 +120,9 @@ body {
 .moving-element {
   transition: transform 1s ease; /* You can adjust the duration and easing function as needed */
 }
+
+
+
 
 /* Animation for screens less than 700px */
 @media (max-width: 700px) {
