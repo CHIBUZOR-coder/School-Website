@@ -33,11 +33,11 @@
 }
 
 .navb {
-  background-color: rgba(10, 8, 8, 0.4);
+  background-color: rgba(10, 8, 8, 0.6);
 }
 .navbar-nav .nav-link {
   color: white !important; /* Change the text color to your desired color */
-  text-shadow: rgba(10, 8, 8, 0.6) !important;
+  text-shadow: rgba(10, 8, 8, 1) !important;
 }
 
 .navbar-nav .nav-link:hover {
@@ -45,7 +45,7 @@
 }
 
 #menu {
-  color: rgb(3, 3, 81) !important;
+  color: rgb(208, 208, 228) !important;
 }
 
 .navbar-toggler:hover {
@@ -103,6 +103,69 @@ body {
   height: 70px;
 }
 
+
+
+/* Add this to your existing styles or style.css file */
+
+/* Common styles for moving elements */
+.moving-element {
+  transition: transform 1s ease; /* You can adjust the duration and easing function as needed */
+}
+
+
+
+/* Add this to your existing styles or style.css file */
+
+/* Common styles for moving elements */
+.moving-element {
+  transition: transform 1s ease; /* You can adjust the duration and easing function as needed */
+}
+
+/* Animation for screens less than 700px */
+@media (max-width: 700px) {
+  #element1,
+  #element3,
+  #element5 {
+    animation: moveLeftRight 6s infinite; /* You can adjust the duration as needed */
+  }
+
+  #element2,
+  #element4 {
+    animation: moveRightLeft 6s infinite; /* You can adjust the duration as needed */
+  }
+
+  @keyframes moveLeftRight {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(-10%);
+    }
+    50% {
+      transform: translateX(0);
+    }
+    75% {
+      transform: translateX(10%);
+    }
+  }
+
+  @keyframes moveRightLeft {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(10%);
+    }
+    50% {
+      transform: translateX(0);
+    }
+    75% {
+      transform: translateX(-10%);
+    }
+  }
+}
+
+
 @media (max-width: 700px) {
   .moving-container {
     flex-direction: column;
@@ -114,4 +177,6 @@ body {
     position: relative;
     width: 80%;
   }
+  
 }
+
