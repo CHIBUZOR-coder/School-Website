@@ -3,7 +3,8 @@ document.addEventListener("DOMContentLoaded", function () {
   var heroImages = ["Imagess/unipics.jpg", "Imagess/study.jpg"];
   var currentIndex = 0;
   var moving_element = document.querySelectorAll(".moving-element");
-  console.log(moving_element);
+  var menu = document.querySelector('#menu');
+  console.log(menu);
 
   function changeHeroBackgroundImage() {
     currentIndex = (currentIndex + 1) % heroImages.length;
@@ -19,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
     } else {
       for (var i = 0; i < moving_element.length; i++) {
         moving_element[i].style.backgroundColor = "rgba(10, 8, 8, 0.5)";
-        
+           
       }
     }
   }
