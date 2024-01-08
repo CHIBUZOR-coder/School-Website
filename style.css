@@ -32,6 +32,20 @@
   z-index: 1000;
 }
 
+.navb{
+  background-color:rgba(10, 8, 8, 0.4) ;
+ 
+}
+  .navbar-nav .nav-link {
+        color: white !important; /* Change the text color to your desired color */
+        text-shadow: rgba(10, 8, 8, 0.6) !important;
+        
+    }
+
+    .navbar-nav .nav-link:hover{
+      color: blue !important;
+    }
+
 .hero {
   position: relative;
   top: 300px;
