@@ -98,21 +98,21 @@ body {
 
 /* Styes for Hero2 container */
 .Hero2 {
-  height: 95vh;
+  height: 100vh;
   transition: background-image 1s ease;
-background-color: rgb(9, 210, 210);
+  /* background-color: rgb(9, 210, 210); */
   transition: all 1s ease-in-out;
   display: flex;
   justify-content: center;
+  align-items: center;
 
   .hero2 {
     position: relative;
     background: url(Imagess/study2.jpg) no-repeat center center/ cover;
-    height: 50%;
+    height: 55%;
     width: 80%;
 
-    top: 50px;
-    border-radius: 5px;
+    border-radius: 40px;
     box-shadow: 0 3px 20px rgba(0, 0, 0, 1);
     transition: background-image 1s ease;
     display: flex;
@@ -159,6 +159,65 @@ background-color: rgb(9, 210, 210);
         color: rgb(146, 143, 143) !important;
       } */
     }
+  }
+}
+.row-con {
+  height: 200vh;
+  width: 100%;
+  transition: background-image 1s ease;
+  min-height: 40vh;
+  /* background-color: brown; */
+
+  .first-row {
+    /* background-color: blue; */
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding-top: 20px;
+
+    .cll {
+      width: 40%;
+      /* background-color: #000000; */
+      min-height: 100vh;
+      transition: all 0.4s ease-in-out;
+        background-color: beige;
+        border-radius: 4px;
+      box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+
+     
+    }
+
+    .cll a {
+      text-decoration: none;
+     
+    }
+    .an:hover {
+      color: blue;
+    }
+    
+    .first-col {
+      background-color: beige;
+    }
+
+    .official {
+      position: relative;
+     width: 100%;
+      /* background-color: chartreuse; */
+      height: 40vh;
+      margin-top: 20px !important;
+        
+    }
+    .off1{
+      background: url(Imagess/event.jpg) center center/ cover;
+    }
+
+ .off2{
+      background: url(Imagess/sportsE.jpg) center center/ cover;
+    }
+
+
   }
 }
 
@@ -214,8 +273,18 @@ background-color: rgb(9, 210, 210);
     flex-direction: column;
     position: relative;
     width: 100%;
-  }
 
+  }
+  .first-row {
+    position: relative;
+    flex-direction: column;
+  }
+  .cll {
+    position: relative;
+    width: 100% !important;
+    padding: 0 10px 0 10px;
+    width:30% ;
+  }
   .moving-element {
     position: relative;
     width: 80%;
@@ -224,31 +293,27 @@ background-color: rgb(9, 210, 210);
     position: relative;
     width: 20%;
   }
-
 }
 
-@media (min-width:400px) and (max-width: 700px) {
-
+@media (min-width: 400px) and (max-width: 700px) {
   .guide {
     flex-direction: column !important;
     justify-content: center;
     font-size: 300% !important;
   }
-  .checkout{
+  .checkout {
     height: 12% !important;
   }
 }
 
-
-@media (min-width:200px) and (max-width: 399.9px) {
-
+@media (min-width: 200px) and (max-width: 399.9px) {
   .guide {
     flex-direction: column !important;
     justify-content: center;
     font-size: 200% !important;
   }
-  
-  .checkout{
+
+  .checkout {
     width: 35% !important;
     height: 15% !important;
   }
