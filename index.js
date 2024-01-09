@@ -4,7 +4,11 @@ document.addEventListener("DOMContentLoaded", function () {
   var currentIndex = 0;
   var moving_element = document.querySelectorAll(".moving-element");
   var menu = document.querySelector('#menu');
+  var checkout = document.querySelector('.checkout');
+  var checkoutchild = document.querySelector(".checkoutChild");
   console.log(menu);
+
+
 
   function changeHeroBackgroundImage() {
     currentIndex = (currentIndex + 1) % heroImages.length;
@@ -80,10 +84,21 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+ var checkout = document.querySelector(".checkout");
+  var checkoutchild = document.querySelector(".checkoutChild");
 
+ checkout.addEventListener("mouseenter", function () {
+    checkoutchild.style.color = "#fff";
+    checkout.style.backgroundColor = " rgba(146, 143, 143, 0.55)";
+  
+ });
 
+ checkout.addEventListener("mouseleave", function () {
 
-
+  checkout.style.backgroundColor = "rgba(0, 0, 0, 0.7)";
+  checkoutchild.style.color = "rgb(146, 143, 143)";
+  
+ });
 
 
 
