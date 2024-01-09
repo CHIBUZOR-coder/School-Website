@@ -6,7 +6,7 @@ body {
 /* Styes for Hero container */
 .Hero {
   background: url(Imagess/unipics.jpg) no-repeat center center/ cover;
-  height: 95vh;
+  min-height: 102vh;
   transition: background-image 1s ease;
 
   transition: all 1s ease-in-out;
@@ -100,7 +100,7 @@ body {
 .Hero2 {
   height: 95vh;
   transition: background-image 1s ease;
-  background-attachment: fixed;
+background-color: rgb(9, 210, 210);
   transition: all 1s ease-in-out;
   display: flex;
   justify-content: center;
@@ -125,7 +125,8 @@ body {
     }
 
     .guide {
-      font-size: 5rem;
+      position: relative;
+      font-size: 400%;
       font-weight: 800;
       color: rgb(146, 143, 143);
       text-shadow: rgba(0, 0, 0, 1);
@@ -142,7 +143,7 @@ body {
       display: flex;
       justify-content: center;
       align-items: center;
-      font-size: 1.5rem;
+
       font-weight: 900;
       color: #fff;
       box-shadow: 0 3px 20px rgba(0, 0, 0, 10);
@@ -150,7 +151,7 @@ body {
 
       .checkoutChild {
         text-decoration: none;
-          color: rgb(146, 143, 143);
+        color: rgb(146, 143, 143);
       }
       /* }
       .checkout:hover{
@@ -222,5 +223,33 @@ body {
   .nav-item {
     position: relative;
     width: 20%;
+  }
+
+}
+
+@media (min-width:400px) and (max-width: 700px) {
+
+  .guide {
+    flex-direction: column !important;
+    justify-content: center;
+    font-size: 300% !important;
+  }
+  .checkout{
+    height: 12% !important;
+  }
+}
+
+
+@media (min-width:200px) and (max-width: 399.9px) {
+
+  .guide {
+    flex-direction: column !important;
+    justify-content: center;
+    font-size: 200% !important;
+  }
+  
+  .checkout{
+    width: 35% !important;
+    height: 15% !important;
   }
 }
