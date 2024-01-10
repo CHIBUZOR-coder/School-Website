@@ -170,7 +170,7 @@ body {
   width: 100%;
   transition: background-image 1s ease;
   min-height: 700px;
-  background-color: brown;
+  /* background-color: brown; */
 
   .first-row {
     width: 100%;
@@ -179,7 +179,7 @@ body {
     justify-content: center;
     gap: 30px;
     padding-top: 20px;
-    background-color: blue;
+    /* background-color: blue; */
 
     .cll {
       width: 35%;
