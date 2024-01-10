@@ -102,7 +102,7 @@ body {
 
 /* Styes for Hero2 container */
 .Hero2 {
-  height: 100vh;
+  height: 90vh;
   transition: background-image 1s ease;
   /* background-color: rgb(9, 210, 210); */
   transition: all 1s ease-in-out;
@@ -166,16 +166,16 @@ body {
   }
 }
 .row-con {
-  height: 200vh;
+
   width: 100%;
   transition: background-image 1s ease;
-  min-height: 40vh;
-  /* background-color: brown; */
+  min-height: 500px;
+  background-color: brown;
 
   .first-row {
     /* background-color: blue; */
     width: 100%;
-    min-height: 50vh;
+    height: 50vh;
     display: flex;
     justify-content: center;
     gap: 30px;
