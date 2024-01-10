@@ -1,12 +1,16 @@
 body {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content:center ;
 }
 
 /* Styes for Hero container */
 .Hero {
   background: url(Imagess/unipics.jpg) no-repeat center center/ cover;
-  min-height: 102vh;
+  min-height: 90vh;
   transition: background-image 1s ease;
 
   transition: all 1s ease-in-out;
@@ -182,42 +186,36 @@ body {
       /* background-color: #000000; */
       min-height: 100vh;
       transition: all 0.4s ease-in-out;
-        background-color: beige;
-        border-radius: 4px;
+      background-color: beige;
+      border-radius: 4px;
       box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
-
-     
     }
 
     .cll a {
       text-decoration: none;
-     
     }
     .an:hover {
       color: blue;
     }
-    
+
     .first-col {
       background-color: beige;
     }
 
     .official {
       position: relative;
-     width: 100%;
+      width: 100%;
       /* background-color: chartreuse; */
       height: 40vh;
       margin-top: 20px !important;
-        
     }
-    .off1{
+    .off1 {
       background: url(Imagess/event.jpg) center center/ cover;
     }
 
- .off2{
+    .off2 {
       background: url(Imagess/sportsE.jpg) center center/ cover;
     }
-
-
   }
 }
 
@@ -273,7 +271,6 @@ body {
     flex-direction: column;
     position: relative;
     width: 100%;
-
   }
   .first-row {
     position: relative;
@@ -282,11 +279,11 @@ body {
   .cll {
     position: relative;
     display: grid;
-     grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     width: 100% !important;
     height: 900px;
     padding: 0 10px 0 10px;
-    width:30% ;
+    width: 30%;
   }
   .moving-element {
     position: relative;
