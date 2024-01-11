@@ -209,7 +209,7 @@ a {
 
 .row-con2 {
   background-color: rgb(30, 55, 101);
-  height: 600px;
+  min-height: 800px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -217,43 +217,91 @@ a {
 
   .second-row {
     background-color: white;
-    height: 400px;
+    min-height: 400px;
     width: 80%;
     margin-top: 20px;
 
     .celeberate {
       margin-top: 20px;
-       position: relative;
-      height: 3rem;
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      position: relative;
+      display: flex;
       /* background-color: blueviolet; */
+      padding-left: 20px;
+      min-height: 200px;
 
       .cle-child {
         position: relative;
-        
       }
 
-      .clb{
+      .eventadd {
+        margin-left: 30px;
+        display: flex;
+        justify-content: right;
+
+        flex: 1;
+        color: rgb(214, 233, 240);
+        /* background-color: black; */
+
+        .morefi {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-right: 40px;
+          text-align: center;
+          height: 45px;
+          background-color: rgb(0, 127, 163);
+          width: 50%;
+        }
+      }
+
+      .ut {
+        flex: 2;
+        color: rgb(30, 55, 101);
+      }
+
+      .clb {
         text-align: right;
         position: relative;
-       
+        width: 60%;
+        text-align: left;
+        p {
+          color: rgb(72, 134, 191);
+        }
         /* background-color: bisque; */
       }
+    }
 
-      .morefi{
-        margin-right: 20px;
+    .celeb-container {
+      position: relative;
+      width: 100%;
+      min-height: 300px;
+
+      display: flex;
+      /* justify-content: center; */
+      padding-left: 20px;
+      gap: 20px;
+
+      .picc {
+        position: relative;
+        width: 50%;
+        min-height: 350px;
       }
 
-      .ut{
-          
-        width:50% ;
+      .celepics {
+        background: url(Imagess/business-man.jpg) center center/ cover;
+      }
+
+      .innovation {
+        background-color: white;
       }
     }
   }
 }
 
 /* Animation for screens less than 700px */
+/* @media (min-width: 700.1px) {
+ 
+} */
 @media (max-width: 700px) {
   #element1,
   #element3,
@@ -301,6 +349,9 @@ a {
 
 /* Hero */
 @media (max-width: 700px) {
+  .row-con2 {
+    min-height: 1400px;
+  }
   .moving-container {
     flex-direction: column;
     position: relative;
@@ -328,14 +379,41 @@ a {
     width: 20%;
   }
 
-/* 
-  .celeberate{
-
-    display: flex !important;
+  .celeberate {
+    flex-direction: column !important;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    padding-left: 0px !important;
+
+    .clb {
+      width: 90% !important;
+    }
+    .eventadd {
+      text-align: center;
+      margin-left: 0px !important;
+      width: 50%;
+      justify-content: center !important;
+      align-items: center;
+
+      .morefi {
+        margin-right: 0px !important;
+        width: 100%;
+      }
+    }
+  }
+
+  .celeb-container {
     flex-direction: column;
-  } */
+    .picc {
+      width: 90% !important;
+      height: 300px;
+    }
+  }
+}
+
+.morefi:hover {
+  background-color: rgb(30, 55, 101) !important;
 }
 
 @media (min-width: 400px) and (max-width: 700px) {
