@@ -38,6 +38,29 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+document.addEventListener("DOMContentLoaded", function () {
+  var checkoutContainer = document.querySelector(".checkout");
+
+  checkoutContainer.addEventListener("mouseover", function () {
+    checkoutContainer.style.backgroundColor = "rgb(146, 143, 143)"; // Change this to your desired background color
+    var checkoutChild = checkoutContainer.querySelector(".checkoutChild");
+    checkoutChild.style.color = "#ffffff"; // Change this to your desired text color
+  });
+
+  checkoutContainer.addEventListener("mouseout", function () {
+    checkoutContainer.style.backgroundColor = ""; // Revert to default background color
+    var checkoutChild = checkoutContainer.querySelector(".checkoutChild");
+    checkoutChild.style.color = ""; // Revert to default text color
+  });
+});
+
+
+
+
+
+
+
+
 
 document.addEventListener("DOMContentLoaded", function () {
   var elements = document.querySelectorAll(".moving-element");
@@ -76,6 +99,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+
+
+
+
   
   // Call the animation function initially
   animateElements();
@@ -91,7 +118,34 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  var navbar = document.querySelector(".sticky");
+  var lastScrollTop = 0;
+  var delta = 5;
+  var navbarHeight = navbar.offsetHeight;
+  var isNavbarHidden = false;
 
+  window.addEventListener("scroll", function () {
+    var st = window.scrollY;
 
-
- 
+    // Check if user is scrolling down and has scrolled more than the delta value
+    if (Math.abs(lastScrollTop - st) > delta) {
+      if (st > lastScrollTop && st > navbarHeight) {
+        // Scrolling down, hide the navbar
+        if (!isNavbarHidden) {
+          navbar.style.transition = "transform 0.8s ease";
+          navbar.style.transform = "translateY(-100%)";
+          isNavbarHidden = true;
+        }
+      } else {
+        // Scrolling up or at the top, show the navbar
+        if (isNavbarHidden) {
+          navbar.style.transition = "transform 0.8s ease";
+          navbar.style.transform = "translateY(0)";
+          isNavbarHidden = false;
+        }
+      }
+      lastScrollTop = st;
+    }
+  });
+});
