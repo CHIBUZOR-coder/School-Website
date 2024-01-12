@@ -217,7 +217,7 @@ a {
 
   .second-row {
     background-color: white;
-    min-height: 400px;
+    min-height: 600px;
     width: 80%;
     margin-top: 20px;
 
@@ -265,7 +265,8 @@ a {
         width: 60%;
         text-align: left;
         p {
-          color: rgb(72, 134, 191);
+          color: rgb(96, 110, 117);
+          font-family: Georgia, "Times New Roman", Times, serif;
         }
         /* background-color: bisque; */
       }
@@ -274,32 +275,81 @@ a {
     .celeb-container {
       position: relative;
       width: 100%;
-      min-height: 300px;
 
       display: flex;
       /* justify-content: center; */
       padding-left: 20px;
       gap: 20px;
 
-      .picc {
-        position: relative;
-        width: 50%;
-        min-height: 350px;
-      }
-
       .celepics {
         background: url(Imagess/business-man.jpg) center center/ cover;
+        width: 50%;
+        height: 350px;
       }
 
       .innovation {
         background-color: white;
+        width: 50%;
+        height: 200px;
+
+        .ino-message {
+          margin-top: 30px;
+        }
       }
 
-
-
-
-      #reshc{
+      #reshc {
         color: rgb(30, 55, 101) !important;
+        &:hover {
+          color: rgb(72, 134, 191) !important;
+        }
+      }
+    }
+  }
+}
+
+.row-con3 {
+  background-color: rgb(208, 209, 201);
+  min-height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .third-row {
+    position: relative;
+    background-color: rgb(207, 223, 222);
+    min-height: 600px;
+    width: 80%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+
+    .magazine {
+      height: 250px;
+      width: 100%;
+      display: flex;
+      background-color: white !important;
+     
+      .magzin{
+         margin-top: 50px;
+      }
+
+      .mhead {
+        position: relative;
+        height: 150px;
+        width: 30%;
+        display: flex;
+        justify-content: center;
+         color: rgb(0, 37, 84) !important;
+
+      
+      }
+
+      .minfo {
+        position: relative;
+        height: 150px;
+        width: 70%;
+        color:rgb(96,110,117);
+
       }
     }
   }
@@ -355,10 +405,26 @@ a {
 }
 
 /* Hero */
+@media (min-width: 701px) {
+  .celeb-container {
+    margin-top: -60px;
+  }
+  .second-row {
+    min-height: 535px !important;
+  }
+
+
+  .hero2{
+    height: 70% !important;
+  }
+}
+
 @media (max-width: 700px) {
   .row-con2 {
-    min-height: 1400px;
+    min-height: 920px;
+    margin-top: 100px;
   }
+
   .moving-container {
     flex-direction: column;
     position: relative;
@@ -386,22 +452,29 @@ a {
     width: 20%;
   }
 
+  .second-row {
+    width: 90% !important;
+    margin-top: -20px !important;
+  }
+
   .celeberate {
     flex-direction: column !important;
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding-left: 0px !important;
+
+    padding: 0 !important;
 
     .clb {
       width: 90% !important;
     }
     .eventadd {
       text-align: center;
-      margin-left: 0px !important;
-      width: 50%;
+      margin-left: 0% !important;
+      width: 90%;
       justify-content: center !important;
       align-items: center;
+      margin-top: 8px !important;
 
       .morefi {
         margin-right: 0px !important;
@@ -412,9 +485,9 @@ a {
 
   .celeb-container {
     flex-direction: column;
+    margin-top: 30px;
     .picc {
-      width: 90% !important;
-      height: 300px;
+      width: 95% !important;
     }
   }
 }

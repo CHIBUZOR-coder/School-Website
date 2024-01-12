@@ -35,16 +35,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+
+
+
+
 document.addEventListener("DOMContentLoaded", function () {
   var elements = document.querySelectorAll(".moving-element");
 
   function animateElements() {
-    elements.forEach(function (element, index) {
-      // Determine the animation group based on index
-      var group = index % 4;
+    // Only animate if the screen width is greater than 700px
+    if (window.innerWidth > 700) {
+      elements.forEach(function (element, index) {
+        // Determine the animation group based on index
+        var group = index % 4;
 
-      // Only animate if the screen width is greater than 700px
-      if (window.innerWidth > 700) {
         setTimeout(function () {
           if (group === 0 || group === 2) {
             element.style.transform = "translateY(-100%)"; // Move up
@@ -52,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
             element.style.transform = "translateY(100%)"; // Move down
           }
           element.style.opacity = "0"; // Make it invisible
-        }, index * 1500); // Adjust the delay as needed
+        }, index * 4000); // Adjust the delay for slower animation
 
         setTimeout(
           function () {
@@ -60,15 +64,19 @@ document.addEventListener("DOMContentLoaded", function () {
             element.style.transform = "translateY(0)";
             element.style.opacity = "1";
           },
-          index * 1500 + 750
-        ); // Adjust the delay as needed
-      }
-    });
+          index * 4000 + 2000 // Adjust the delay for slower animation
+        );
+      });
 
-    // Call the function recursively for continuous looping
-    setTimeout(animateElements, elements.length * 1500);
+
+      // Call the function recursively for continuous looping
+      setTimeout(animateElements, elements.length * 4000);
+    }
   }
 
+
+
+  
   // Call the animation function initially
   animateElements();
 
@@ -84,142 +92,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
- var checkout = document.querySelector(".checkout");
-  var checkoutchild = document.querySelector(".checkoutChild");
-
- checkout.addEventListener("mouseenter", function () {
-    checkoutchild.style.color = "#fff";
-    checkout.style.backgroundColor = " rgba(146, 143, 143, 0.55)";
-  
- });
-
- checkout.addEventListener("mouseleave", function () {
-
-  checkout.style.backgroundColor = "rgba(0, 0, 0, 0.7)";
-  checkoutchild.style.color = "rgb(146, 143, 143)";
-  
- });
-
-
-
-// document.addEventListener("DOMContentLoaded", function () {
-//   var elements = document.querySelectorAll(".moving-element");
-//   var animationTimeout;
-
-//   function animateElements() {
-//     elements.forEach(function (element, index) {
-//       var group = index % 4;
-
-//       setTimeout(function () {
-//         if (group === 0 || group === 2) {
-//           element.style.transform = "translateY(-100%)"; // Move up
-//         } else {
-//           element.style.transform = "translateY(100%)"; // Move down
-//         }
-//         element.style.opacity = "0"; // Make it invisible
-//       }, index * 1500);
-
-//       setTimeout(
-//         function () {
-//           element.style.transform = "translateY(0)";
-//           element.style.opacity = "1";
-//         },
-//         index * 1500 + 750
-//       );
-//     });
-
-//     // Call the function recursively for continuous looping
-//     animationTimeout = setTimeout(animateElements, elements.length * 1500);
-//   }
-
-//   function handleResize() {
-//     // Clear previous timeouts to prevent overlapping animations
-//     clearTimeout(animationTimeout);
-
-//     // Stop ongoing animations immediately
-//     elements.forEach(function (element) {
-//       element.style.transition = "none";
-//       element.style.transform = "translateY(0)";
-//       element.style.opacity = "1";
-//     });
-
-//     // Restart animation only if screen width is greater than 700px
-//     if (window.innerWidth > 700) {
-//       // Restore transition and start animation
-//       elements.forEach(function (element) {
-//         element.style.transition = "";
-//       });
-//       animateElements();
-//     }
-//   }
-
-//   // Call the animation function initially
-//   animateElements();
-
-//   // Listen for window resize event
-//   window.addEventListener("resize", handleResize);
-// });
-
-
-// document.addEventListener("DOMContentLoaded", function () {
-//   var elements = document.querySelectorAll(".moving-element");
-//   var animationTimeout;
-
-//   function animateElements() {
-//     elements.forEach(function (element, index) {
-//       var group = index % 4;
-
-//       setTimeout(function () {
-//         if (group === 0 || group === 2) {
-//           element.style.transform = "translateY(-100%)"; // Move up
-//         } else {
-//           element.style.transform = "translateY(100%)"; // Move down
-//         }
-//         element.style.opacity = "0"; // Make it invisible
-//       }, index * 1500);
-
-//       setTimeout(
-//         function () {
-//           element.style.transform = "translateY(0)";
-//           element.style.opacity = "1";
-//         },
-//         index * 1500 + 750
-//       );
-//     });
-
-//     // Call the function recursively for continuous looping
-//     animationTimeout = setTimeout(animateElements, elements.length * 1500);
-//   }
-
-//   function handleResize() {
-//     // Clear previous timeouts to prevent overlapping animations
-//     clearTimeout(animationTimeout);
-
-//     // Stop ongoing animations immediately
-//     elements.forEach(function (element) {
-//       element.style.transition = "none";
-//       element.style.transform = "translateY(0)";
-//       element.style.opacity = "1";
-//     });
-
-//     // Ensure the browser repaints before restoring the transition
-//     requestAnimationFrame(function () {
-//       // Restore transition and start animation only if screen width is greater than 700px
-//       if (window.innerWidth > 700) {
-//         elements.forEach(function (element) {
-//           element.style.transition = "";
-//         });
-//         animateElements();
-//       }
-//     });
-//   }
-
-//   // Call the animation function initially
-//   animateElements();
-
-//   // Listen for window resize event
-//   window.addEventListener("resize", handleResize);
-// });
 
 
  
