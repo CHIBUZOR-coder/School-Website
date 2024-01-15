@@ -366,9 +366,10 @@ a {
   }
 
   .forth-row {
+    /* this width and height settings only works for screen size (0-700px) but i have made  settings for  the other screen  size in media query*/
     position: relative;
-    height: 700px;
-    width: 80%;
+    height: 520px;
+    width: 90%;
     background: url(Imagess/power.jpg) center center/ cover;
     margin: 0 auto 0 auto;
 
@@ -376,22 +377,18 @@ a {
       position: relative;
       /* background-color: blue; */
       width: 80%;
-      margin: 370px 0 0 40px;
+      margin: 370px 0 0 0;
       color: rgb(96, 110, 117);
 
       .story-head {
-        width:150px ;
+        width: 150px;
         position: relative;
-        background-color: rgb(30,55,101);
+        background-color: rgb(30, 55, 101);
         color: white;
         height: 40px;
         display: flex;
         justify-content: center;
         align-items: center;
-   
-        
-
-
       }
 
       .story-info {
@@ -473,6 +470,11 @@ a {
     height: 70% !important;
   }
 
+  .forth-row{
+    width: 80% !important;
+      height: 700px !important;
+  }
+
   /* 
   .magazine{
     display: flex;
@@ -485,7 +487,12 @@ a {
     min-height: 920px;
     margin-top: 100px;
   }
-
+.row-con3{
+  height: 1350px;
+  .story{
+     margin: 220px 0 0 0 !important;
+  }
+}
   .moving-container {
     flex-direction: column;
     position: relative;
@@ -542,6 +549,7 @@ a {
         width: 100%;
       }
     }
+   
   }
 
   .celeb-container {
@@ -555,7 +563,7 @@ a {
   .third-row {
     width: 90% !important;
     /* background-color:blue !important; */
-    min-height: 400px !important;
+   
   }
 
   .magazine {
