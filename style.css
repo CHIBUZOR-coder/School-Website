@@ -188,7 +188,7 @@ body {
       .official {
         position: relative;
         width: 100%;
-        height: 15rem;
+        height: 30rem;
         margin-top: 20px !important;
       }
 
@@ -320,6 +320,7 @@ a {
     background-color: white;
     height: 250px;
     width: 80%;
+    padding-top:10px;
 
     display: flex;
     justify-content: center;
@@ -351,7 +352,7 @@ a {
       .explore {
         position: relative;
         background-color: rgb(0, 127, 163);
-        width: 50%;
+        width: 60%;
         height: 45px;
         display: flex;
         justify-content: center;
@@ -377,13 +378,14 @@ a {
       position: relative;
       /* background-color: blue; */
       width: 80%;
-      margin: 370px 0 0 0;
+      margin: 480px 0 0 0;
       color: rgb(96, 110, 117);
+      padding-left: 10px;
 
       .story-head {
         width: 150px;
         position: relative;
-        background-color: rgb(30, 55, 101);
+        background-color: rgb(30, 55, 101, 0.6);
         color: white;
         height: 40px;
         display: flex;
@@ -393,15 +395,21 @@ a {
 
       .story-info {
         position: relative;
-        background-color: white;
+        background-color: rgba(146, 143, 143, 0.6);
         padding-left: 20px;
         height: 170px;
         display: flex !important;
         flex-direction: column;
         justify-content: center;
+        
+        color: white;
+      }
+      .story-info a{
+
+        color:rgb(30,55,101) ;
       }
 
-      .story-info:hover a {
+      .story-info a:hover {
         color: rgb(96, 110, 117);
       }
     }
@@ -458,6 +466,9 @@ a {
 }
 
 /* Hero */
+
+
+
 @media (min-width: 701px) {
   .celeb-container {
     margin-top: -60px;
@@ -470,9 +481,9 @@ a {
     height: 70% !important;
   }
 
-  .forth-row{
+  .forth-row {
     width: 80% !important;
-      height: 700px !important;
+    height: 700px !important;
   }
 
   /* 
@@ -482,17 +493,26 @@ a {
   } */
 }
 
+
 @media (max-width: 700px) {
+  .Hero{
+    min-height: 112vh;
+  }
   .row-con2 {
     min-height: 920px;
     margin-top: 100px;
   }
-.row-con3{
-  height: 1350px;
-  .story{
-     margin: 220px 0 0 0 !important;
+  .row-con3 {
+    height: 1350px;
+    .story {
+      margin: 220px 0 0 0 !important;
+      height: 300px;
+
+      .story-info {
+        height: 250px !important;
+      }
+    }
   }
-}
   .moving-container {
     flex-direction: column;
     position: relative;
@@ -549,7 +569,6 @@ a {
         width: 100%;
       }
     }
-   
   }
 
   .celeb-container {
@@ -563,7 +582,8 @@ a {
   .third-row {
     width: 90% !important;
     /* background-color:blue !important; */
-   
+    height: 350px !important;
+    padding-bottom: 20px !important;
   }
 
   .magazine {
