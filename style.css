@@ -18,7 +18,7 @@ body {
     z-index: 1000;
 
     .navb {
-      background-color: rgba(10, 8, 8, 0.92);
+      background-color: rgb(30, 55, 101, 0.94);
 
       .navbar-toggler:hover {
         background-color: rgba(10, 8, 8, 0.5);
@@ -320,7 +320,7 @@ a {
     background-color: white;
     height: 250px;
     width: 80%;
-    padding-top:10px;
+    padding-top: 10px;
 
     display: flex;
     justify-content: center;
@@ -397,23 +397,77 @@ a {
         position: relative;
         background-color: rgba(146, 143, 143, 0.6);
         padding-left: 15px;
-        padding-right: 15px;
+        padding-right: 1px;
         height: 170px;
         display: flex !important;
         flex-direction: column;
         justify-content: center;
-        
+
         color: white;
       }
-      .story-info a{
-
-        color:rgb(30,55,101) ;
+      .story-info a {
+        color: rgb(30, 55, 101);
       }
 
       .story-info a:hover {
         color: rgb(96, 110, 117);
       }
     }
+  }
+}
+
+.footer {
+  position: relative;
+  background-color: rgb(30, 55, 101);
+  height: 500px;
+  width: 100%;
+  display: flow-root;
+
+  .foot-container {
+    position: relative;
+    min-height: 200px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    margin: 60px auto 0 auto;
+
+    .alllist a {
+      display: block;
+      color: white;
+      &:hover {
+        color: rgb(96, 110, 117);
+      }
+    }
+  }
+
+  .divide {
+    position: relative;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    color: white;
+    width: 70%;
+    margin: 0 auto 0 auto;
+  }
+  .statement {
+    width: 70%;
+    color: white;
+    margin: 40px auto 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .lorem{
+      text-align: center;
+    }
+  }
+
+  .social {
+    position: relative;
+    min-height: 200px;
+    width: 100%;
+    margin: 60px auto 0 auto;
+    background-color: rgb(0, 30, 66);
   }
 }
 
@@ -467,9 +521,6 @@ a {
 }
 
 /* Hero */
-
-
-
 @media (min-width: 701px) {
   .celeb-container {
     margin-top: -60px;
@@ -494,10 +545,292 @@ a {
   } */
 }
 
+@media (max-width: 163.9px) {
+  .Hero {
+    min-height: 330vh;
 
-@media (max-width: 700px) {
-  .Hero{
-    min-height: 112vh;
+    .logo {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  .Hero2 {
+    height: 80vh;
+    transition: background-image 1s ease;
+    margin-top: 40px;
+
+    .hero2 {
+      height: 110%;
+      width: 90%;
+      border-radius: 20px;
+
+      #link {
+        text-decoration: none !important;
+      }
+
+      .guide {
+        position: relative;
+        font-size: 200%;
+        font-weight: 700;
+        margin-left: 20px;
+        color: rgb(146, 143, 143);
+        text-shadow: rgba(0, 0, 0, 1);
+        .gdi {
+          color: white;
+        }
+      }
+      .checkout {
+        position: relative;
+        width: 60%;
+        height: 20%;
+        font-weight: 900;
+        color: #fff;
+      }
+    }
+  }
+
+  .row-con {
+    min-height: 115vh;
+    .first-row {
+      padding-top: 20px;
+      .cll {
+        position: relative;
+        width: 35%;
+
+        .official {
+          position: relative;
+          width: 100%;
+          height: 8rem;
+          margin-top: 20px !important;
+        }
+
+        .off1 {
+          background: url(Imagess/event.jpg) center center/ cover;
+        }
+
+        .off2 {
+          background: url(Imagess/sportsE.jpg) center center/ cover;
+        }
+      }
+    }
+  }
+
+  .row-con2 {
+    min-height: 1100px;
+    margin-top: 100px;
+    .second-row {
+      margin-top: 20px !important;
+      height: 1000px;
+    }
+    .morefi {
+      width: 200px !important;
+    }
+
+    .celeb-container {
+      position: relative;
+      width: 100%;
+
+      display: flex;
+      /* justify-content: center; */
+      padding-left: 7px !important;
+      gap: 20px;
+
+      .celepics {
+        background: url(Imagess/business-man.jpg) center center/ cover;
+        width: 50%;
+        height: 200px !important;
+      }
+
+      .innovation {
+        background-color: white;
+        width: 50%;
+        height: 200px;
+
+        .ino-message {
+          margin-top: 30px;
+        }
+      }
+
+      #reshc {
+        color: rgb(30, 55, 101) !important;
+        &:hover {
+          color: rgb(72, 134, 191) !important;
+        }
+      }
+    }
+  }
+  .row-con3 {
+    height: 1350px;
+    .story {
+      margin: 220px 0 0 0 !important;
+      height: 300px;
+
+      .story-info {
+        height: 250px !important;
+      }
+    }
+  }
+  .moving-container {
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+  }
+  .first-row {
+    position: relative;
+    flex-direction: column;
+  }
+  .cll {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 100% !important;
+
+    padding: 0 10px 0 10px;
+  }
+  .moving-element {
+    position: relative;
+    width: 80%;
+  }
+  .nav-item {
+    position: relative;
+    width: 20%;
+  }
+
+  .second-row {
+    width: 90% !important;
+    margin-top: -20px !important;
+  }
+
+  .celeberate {
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    padding: 0 !important;
+
+    .clb {
+      width: 90% !important;
+    }
+    .eventadd {
+      text-align: center;
+      margin-left: 0% !important;
+      width: 90%;
+      justify-content: center !important;
+      align-items: center;
+      margin-top: 8px !important;
+
+      .morefi {
+        margin-right: 0px !important;
+        width: 100%;
+      }
+    }
+  }
+
+  .celeb-container {
+    flex-direction: column;
+    margin-top: 30px;
+    .picc {
+      width: 95% !important;
+    }
+  }
+
+  .row-con3 {
+    height: 1550px;
+
+    .third-row {
+      width: 90% !important;
+      /* background-color:blue !important; */
+      height: 650px !important;
+      padding-bottom: 20px !important;
+
+      .magazine {
+        display: flex;
+        flex-direction: column;
+        padding: 0 20px 0 20px;
+        width: 100% !important;
+
+        .minfo {
+          width: 100% !important;
+          color: rgb(113, 86, 127);
+        }
+        .mhead {
+          width: 100% !important;
+        }
+
+        .explore {
+          position: relative;
+          background-color: rgb(0, 127, 163);
+          width: 110px !important;
+          height: 45px !important;
+          font-size: 0.7rem;
+          margin-left: -3px;
+          font-weight: 650;
+
+          &:hover {
+            background-color: rgb(0, 37, 84);
+          }
+        }
+      }
+    }
+
+    .forth-row {
+      /* this width and height settings only works for screen size (0-700px) but i have made  settings for  the other screen  size in media query*/
+      position: relative;
+      height: 800px;
+      width: 90%;
+      background: url(Imagess/power.jpg) center center/ cover;
+      margin: 0 auto 0 auto;
+
+      .story {
+        position: relative;
+        /* background-color: blue; */
+        width: 80%;
+        margin: 480px 0 0 0;
+        color: rgb(96, 110, 117);
+        padding-left: 10px;
+        /* 
+        .idea{
+          margin-top: -250px !important;
+        } */
+        .story-head {
+          width: 120px !important;
+          font-size: 0.2rem !important;
+          position: relative;
+          margin-top: -120px !important;
+        }
+
+        .story-info {
+          position: relative;
+          background-color: rgba(146, 143, 143, 0.6);
+          padding-left: 15px;
+          padding-right: 1px;
+          height: 500px !important;
+          margin-top: 0px;
+          width: 120%;
+
+          color: white;
+          .envi {
+            margin-left: -10px;
+          }
+        }
+        .story-info a {
+          color: rgb(30, 55, 101);
+          font-size: 0.3rem !important;
+        }
+
+        .story-info a:hover {
+          color: rgb(96, 110, 117);
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 164px) and (max-width: 700px) {
+  .Hero {
+    min-height: 108vh;
   }
   .row-con2 {
     min-height: 920px;
@@ -530,7 +863,6 @@ a {
     width: 100% !important;
 
     padding: 0 10px 0 10px;
-    width: 30%;
   }
   .moving-element {
     position: relative;
