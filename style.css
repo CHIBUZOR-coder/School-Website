@@ -18,8 +18,10 @@ body {
     z-index: 1000;
 
     .navb {
-      background-color: rgb(30, 55, 101, 0.94);
-
+      background-color: rgba(13, 13, 23, 0.9);
+      /* .nav-item a{
+  background-color: rgb(0,30,66);
+} */
       .navbar-toggler:hover {
         background-color: rgba(10, 8, 8, 0.5);
       }
@@ -422,6 +424,7 @@ a {
   height: 500px;
   width: 100%;
   display: flow-root;
+  transition: all 0.5s ease-in-out;
 
   .foot-container {
     position: relative;
@@ -457,17 +460,66 @@ a {
     align-items: center;
     flex-direction: column;
 
-    .lorem{
+    .lorem {
       text-align: center;
     }
   }
-
-  .social {
+  .social-con {
     position: relative;
     min-height: 200px;
     width: 100%;
     margin: 60px auto 0 auto;
+
     background-color: rgb(0, 30, 66);
+
+    .social {
+      position: relative;
+      width: 100%;
+
+      display: flow-root;
+    }
+
+    .icons {
+      position: relative;
+      width: 70%;
+      display: flex;
+      justify-content: center;
+      margin: 60px auto 0 auto;
+      transition: all 0.5s ease-in-out;
+
+      .icn a {
+        color: white;
+      }
+      .icn {
+        position: relative;
+        width: 30px;
+        height: 30px;
+        background-color: rgb(0, 127, 163);
+        margin: 0 10px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.5s ease-in-out;
+
+        &:hover {
+          background-color: white;
+          transition: all 0.5s ease-in-out;
+        }
+      }
+
+      .icn:hover a {
+        color: blue;
+        transition: all 0.5s ease-in-out;
+      }
+    }
+    .cment {
+      position: relative;
+      width: 50%;
+      margin: 60px auto 0 auto;
+      text-align: center;
+    color: white;
+    }
   }
 }
 
@@ -947,6 +999,15 @@ a {
         background-color: rgb(0, 37, 84);
       }
     }
+  }
+
+
+  .statement{
+    width: 90% !important;
+    
+  }
+  .divide{
+    margin-top: 10px !important;
   }
 }
 

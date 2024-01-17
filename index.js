@@ -3,12 +3,10 @@ document.addEventListener("DOMContentLoaded", function () {
   var heroImages = ["Imagess/unipics.jpg", "Imagess/study.jpg"];
   var currentIndex = 0;
   var moving_element = document.querySelectorAll(".moving-element");
-  var menu = document.querySelector('#menu');
-  var checkout = document.querySelector('.checkout');
+  var menu = document.querySelector("#menu");
+  var checkout = document.querySelector(".checkout");
   var checkoutchild = document.querySelector(".checkoutChild");
   console.log(menu);
-
-
 
   function changeHeroBackgroundImage() {
     currentIndex = (currentIndex + 1) % heroImages.length;
@@ -18,13 +16,12 @@ document.addEventListener("DOMContentLoaded", function () {
     // Apply specific text color class based on the index
     if (currentIndex === 1) {
       for (var i = 0; i < moving_element.length; i++) {
-         moving_element[i].style.backgroundColor = "rgba(10, 8, 8, 0.2)";
+        moving_element[i].style.backgroundColor = "rgba(10, 8, 8, 0.2)";
         moving_element[i].style.color = "white";
       }
     } else {
       for (var i = 0; i < moving_element.length; i++) {
         moving_element[i].style.backgroundColor = "rgba(10, 8, 8, 0.5)";
-           
       }
     }
   }
@@ -32,11 +29,6 @@ document.addEventListener("DOMContentLoaded", function () {
   // Change hero background image every 5 seconds (adjust the interval as needed)
   setInterval(changeHeroBackgroundImage, 5000);
 });
-
-
-
-
-
 
 document.addEventListener("DOMContentLoaded", function () {
   var checkoutContainer = document.querySelector(".checkout");
@@ -54,10 +46,8 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-
-
-
-
+var icons = document.querySelector(".icons");
+console.log(icons);
 
 
 
@@ -91,19 +81,11 @@ document.addEventListener("DOMContentLoaded", function () {
         );
       });
 
-
       // Call the function recursively for continuous looping
       setTimeout(animateElements, elements.length * 4000);
     }
   }
 
-
-
-
-
-
-
-  
   // Call the animation function initially
   animateElements();
 
